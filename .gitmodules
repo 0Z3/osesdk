@@ -1,0 +1,3 @@
+[submodule "source/libose"]
+	path = source/libose
+	url = https://github.com/0Z3/libose
