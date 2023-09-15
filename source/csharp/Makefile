@@ -96,16 +96,11 @@ $(DYNAMIC_TARGET): $(OFILES) $(CFILES) $(HFILES)
 ############################################################
 # Derived files
 ############################################################
-#sys/ose_endianchk: CC=clang
-$(LIBOSEDIR)/sys/ose_endianchk: $(LIBOSEDIR)/sys/ose_endianchk.c
-	$(CC) -o $(LIBOSEDIR)/sys/ose_endianchk $(LIBOSEDIR)/sys/ose_endianchk.c
-
-$(LIBOSEDIR)/sys/ose_endian.h: $(LIBOSEDIR)/sys/ose_endianchk
-	$(LIBOSEDIR)/sys/ose_endianchk > $(LIBOSEDIR)/sys/ose_endian.h
+$(LIBOSEDIR)/sys/ose_endian.h: #$(LIBOSEDIR)/sys/ose_endianchk
+	cd $(LIBOSEDIR) && make sys/ose_endian.h
 
 $(LIBOSEDIR)/ose_version.h:
-	echo "#define OSE_VERSION \""`git describe --always --dirty --tags`"\"" > ose_version.h
-	echo "#define OSE_DATE_COMPILED \""`date`"\"" >> $(LIBOSEDIR)/ose_version.h
+	cd $(LIBOSEDIR) && make ose_version.h
 
 ose_conf.h:
 	touch ose_conf.h
@@ -114,5 +109,5 @@ ose_conf.h:
 # Clean
 ############################################################
 .PHONY: clean
-clean: 
-	rm -rf $(STATIC_TARGET) $(DYNAMIC_TARGET) *.dSYM $(LIBOSEDIR)/sys/ose_endianchk $(LIBOSEDIR)/sys/ose_endian.h *.o $(LIBOSEDIR)/sys/*.o ose_version.h 
+clean:
+	rm -rf $(STATIC_TARGET) $(DYNAMIC_TARGET) *.dSYM *.o *.cs libose_wrap_csharp.*

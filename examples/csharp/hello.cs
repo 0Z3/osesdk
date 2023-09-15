@@ -25,7 +25,8 @@ public class OSE : OSECsharpBase
     
     public void loadLib()
     {
-        libose.ose_bindAlignedPtr(vm_x, "/println", 7,
+        log();
+        libose.ose_bindAlignedPtr(vm_x, "/println", 8,
                                   getfnptr("/println"));
         libose.ose_bindAlignedPtr(vm_x, "/sendto", 7,
                                   getfnptr("/sendto"));
@@ -86,6 +87,9 @@ public class OSE : OSECsharpBase
         log(buf.Length.ToString());
         IPEndPoint ep = new IPEndPoint(ipaddress, port);
         sock.SendTo(buf, ep);
+        libose.ose_clear(vm_s);
+        sock = null;
+        ep = null;
     }
 }
 
@@ -93,7 +97,7 @@ public class HelloWorld
 {
     public static void Main(string[] args)
     {
-        Console.WriteLine(libose.ose_version_string);
+        Console.WriteLine(libose.ose_version_string());
         OSE o = new OSE();
         o.init();
         o.loadLib();

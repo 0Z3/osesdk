@@ -1,6 +1,8 @@
-.PHONY: all csharp csharp-clean
+.PHONY: all csharp libose-clean csharp-clean
 all: csharp
-clean: csharp-clean
+clean: libose-clean csharp-clean
+
+LIBOSE_DIR=source/libose
 
 CSHARP_SOURCE=source/csharp
 CSHARP_EXAMPLES=examples/csharp
@@ -12,3 +14,6 @@ csharp:
 csharp-clean:
 	cd $(CSHARP_SOURCE) && $(MAKE) clean
 	cd $(CSHARP_EXAMPLES) && $(MAKE) clean
+
+libose-clean:
+	cd $(LIBOSE_DIR) && $(MAKE) clean

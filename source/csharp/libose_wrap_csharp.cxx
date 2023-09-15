@@ -740,7 +740,7 @@ SWIGEXPORT char SWIGSTDCALL CSharp_OSETT_ID_get() {
   char jresult ;
   char result;
   
-  result = (char)(',');
+  result = (char)(char)OSETT_ID;
   jresult = result; 
   return jresult;
 }
@@ -750,7 +750,7 @@ SWIGEXPORT char * SWIGSTDCALL CSharp_OSETTSTR_ID_get() {
   char * jresult ;
   char *result = 0 ;
   
-  result = (char *)(",");
+  result = (char *)(char *)OSETTSTR_ID;
   jresult = SWIG_csharp_string_callback((const char *)result); 
   return jresult;
 }
@@ -760,7 +760,7 @@ SWIGEXPORT char SWIGSTDCALL CSharp_OSETT_INT32_get() {
   char jresult ;
   char result;
   
-  result = (char)('i');
+  result = (char)(char)OSETT_INT32;
   jresult = result; 
   return jresult;
 }
@@ -770,7 +770,7 @@ SWIGEXPORT char * SWIGSTDCALL CSharp_OSETTSTR_INT32_get() {
   char * jresult ;
   char *result = 0 ;
   
-  result = (char *)("i");
+  result = (char *)(char *)OSETTSTR_INT32;
   jresult = SWIG_csharp_string_callback((const char *)result); 
   return jresult;
 }
@@ -780,7 +780,7 @@ SWIGEXPORT char SWIGSTDCALL CSharp_OSETT_FLOAT_get() {
   char jresult ;
   char result;
   
-  result = (char)('f');
+  result = (char)(char)OSETT_FLOAT;
   jresult = result; 
   return jresult;
 }
@@ -790,7 +790,7 @@ SWIGEXPORT char * SWIGSTDCALL CSharp_OSETTSTR_FLOAT_get() {
   char * jresult ;
   char *result = 0 ;
   
-  result = (char *)("f");
+  result = (char *)(char *)OSETTSTR_FLOAT;
   jresult = SWIG_csharp_string_callback((const char *)result); 
   return jresult;
 }
@@ -800,7 +800,7 @@ SWIGEXPORT char SWIGSTDCALL CSharp_OSETT_STRING_get() {
   char jresult ;
   char result;
   
-  result = (char)('s');
+  result = (char)(char)OSETT_STRING;
   jresult = result; 
   return jresult;
 }
@@ -810,7 +810,7 @@ SWIGEXPORT char * SWIGSTDCALL CSharp_OSETTSTR_STRING_get() {
   char * jresult ;
   char *result = 0 ;
   
-  result = (char *)("s");
+  result = (char *)(char *)OSETTSTR_STRING;
   jresult = SWIG_csharp_string_callback((const char *)result); 
   return jresult;
 }
@@ -820,7 +820,7 @@ SWIGEXPORT char SWIGSTDCALL CSharp_OSETT_BLOB_get() {
   char jresult ;
   char result;
   
-  result = (char)('b');
+  result = (char)(char)OSETT_BLOB;
   jresult = result; 
   return jresult;
 }
@@ -830,7 +830,7 @@ SWIGEXPORT char * SWIGSTDCALL CSharp_OSETTSTR_BLOB_get() {
   char * jresult ;
   char *result = 0 ;
   
-  result = (char *)("b");
+  result = (char *)(char *)OSETTSTR_BLOB;
   jresult = SWIG_csharp_string_callback((const char *)result); 
   return jresult;
 }
@@ -840,7 +840,7 @@ SWIGEXPORT char SWIGSTDCALL CSharp_OSETT_TRUE_get() {
   char jresult ;
   char result;
   
-  result = (char)('T');
+  result = (char)(char)OSETT_TRUE;
   jresult = result; 
   return jresult;
 }
@@ -850,7 +850,7 @@ SWIGEXPORT char * SWIGSTDCALL CSharp_OSETTSTR_TRUE_get() {
   char * jresult ;
   char *result = 0 ;
   
-  result = (char *)("T");
+  result = (char *)(char *)OSETTSTR_TRUE;
   jresult = SWIG_csharp_string_callback((const char *)result); 
   return jresult;
 }
@@ -860,7 +860,7 @@ SWIGEXPORT char SWIGSTDCALL CSharp_OSETT_FALSE_get() {
   char jresult ;
   char result;
   
-  result = (char)('F');
+  result = (char)(char)OSETT_FALSE;
   jresult = result; 
   return jresult;
 }
@@ -870,17 +870,17 @@ SWIGEXPORT char * SWIGSTDCALL CSharp_OSETTSTR_FALSE_get() {
   char * jresult ;
   char *result = 0 ;
   
-  result = (char *)("F");
+  result = (char *)(char *)OSETTSTR_FALSE;
   jresult = SWIG_csharp_string_callback((const char *)result); 
   return jresult;
 }
 
 
-SWIGEXPORT int SWIGSTDCALL CSharp_OSETT_NOTYPETAG_get() {
-  int jresult ;
-  int result;
+SWIGEXPORT char SWIGSTDCALL CSharp_OSETT_NOTYPETAG_get() {
+  char jresult ;
+  char result;
   
-  result = (int)(0);
+  result = (char)(char)OSETT_NOTYPETAG;
   jresult = result; 
   return jresult;
 }
@@ -890,7 +890,7 @@ SWIGEXPORT char * SWIGSTDCALL CSharp_OSETTSTR_NOTYPETAG_get() {
   char * jresult ;
   char *result = 0 ;
   
-  result = (char *)("");
+  result = (char *)(char *)OSETTSTR_NOTYPETAG;
   jresult = SWIG_csharp_string_callback((const char *)result); 
   return jresult;
 }
@@ -900,7 +900,7 @@ SWIGEXPORT char SWIGSTDCALL CSharp_OSETT_BUNDLE_get() {
   char jresult ;
   char result;
   
-  result = (char)('|');
+  result = (char)(char)OSETT_BUNDLE;
   jresult = result; 
   return jresult;
 }
@@ -910,7 +910,7 @@ SWIGEXPORT char * SWIGSTDCALL CSharp_OSETTSTR_BUNDLE_get() {
   char * jresult ;
   char *result = 0 ;
   
-  result = (char *)("|");
+  result = (char *)(char *)OSETTSTR_BUNDLE;
   jresult = SWIG_csharp_string_callback((const char *)result); 
   return jresult;
 }
@@ -920,7 +920,7 @@ SWIGEXPORT char SWIGSTDCALL CSharp_OSETT_MESSAGE_get() {
   char jresult ;
   char result;
   
-  result = (char)('-');
+  result = (char)(char)OSETT_MESSAGE;
   jresult = result; 
   return jresult;
 }
@@ -930,7 +930,7 @@ SWIGEXPORT char * SWIGSTDCALL CSharp_OSETTSTR_MESSAGE_get() {
   char * jresult ;
   char *result = 0 ;
   
-  result = (char *)("-");
+  result = (char *)(char *)OSETTSTR_MESSAGE;
   jresult = SWIG_csharp_string_callback((const char *)result); 
   return jresult;
 }
@@ -940,7 +940,7 @@ SWIGEXPORT char SWIGSTDCALL CSharp_OSETT_ALIGNEDPTR_get() {
   char jresult ;
   char result;
   
-  result = (char)('p');
+  result = (char)(char)OSETT_ALIGNEDPTR;
   jresult = result; 
   return jresult;
 }
@@ -950,13 +950,13 @@ SWIGEXPORT char * SWIGSTDCALL CSharp_OSETTSTR_ALIGNEDPTR_get() {
   char * jresult ;
   char *result = 0 ;
   
-  result = (char *)("p");
+  result = (char *)(char *)OSETTSTR_ALIGNEDPTR;
   jresult = SWIG_csharp_string_callback((const char *)result); 
   return jresult;
 }
 
 
-SWIGEXPORT char * SWIGSTDCALL CSharp_OSE_BUNDLE_ID_get() {
+SWIGEXPORT char * SWIGSTDCALL CSharp_OSE_BUNDLE_ID__get() {
   char * jresult ;
   char *result = 0 ;
   
@@ -966,11 +966,51 @@ SWIGEXPORT char * SWIGSTDCALL CSharp_OSE_BUNDLE_ID_get() {
 }
 
 
-SWIGEXPORT int SWIGSTDCALL CSharp_OSE_BUNDLE_ID_LEN_get() {
+SWIGEXPORT int SWIGSTDCALL CSharp_OSE_BUNDLE_ID_LEN__get() {
   int jresult ;
   int result;
   
   result = (int)(8);
+  jresult = result; 
+  return jresult;
+}
+
+
+SWIGEXPORT char * SWIGSTDCALL CSharp_OSE_TIMETAG_NULL__get() {
+  char * jresult ;
+  char *result = 0 ;
+  
+  result = (char *)("");
+  jresult = SWIG_csharp_string_callback((const char *)result); 
+  return jresult;
+}
+
+
+SWIGEXPORT int SWIGSTDCALL CSharp_OSE_TIMETAG_LEN__get() {
+  int jresult ;
+  int result;
+  
+  result = (int)(8);
+  jresult = result; 
+  return jresult;
+}
+
+
+SWIGEXPORT char * SWIGSTDCALL CSharp_OSE_BUNDLE_ID_get() {
+  char * jresult ;
+  char *result = 0 ;
+  
+  result = (char *)(char *)OSE_BUNDLE_ID;
+  jresult = SWIG_csharp_string_callback((const char *)result); 
+  return jresult;
+}
+
+
+SWIGEXPORT int SWIGSTDCALL CSharp_OSE_BUNDLE_ID_LEN_get() {
+  int jresult ;
+  int32_t result;
+  
+  result = (int32_t)(int32_t)OSE_BUNDLE_ID_LEN;
   jresult = result; 
   return jresult;
 }
@@ -980,7 +1020,7 @@ SWIGEXPORT char * SWIGSTDCALL CSharp_OSE_TIMETAG_NULL_get() {
   char * jresult ;
   char *result = 0 ;
   
-  result = (char *)("");
+  result = (char *)(char *)OSE_TIMETAG_NULL;
   jresult = SWIG_csharp_string_callback((const char *)result); 
   return jresult;
 }
@@ -988,9 +1028,9 @@ SWIGEXPORT char * SWIGSTDCALL CSharp_OSE_TIMETAG_NULL_get() {
 
 SWIGEXPORT int SWIGSTDCALL CSharp_OSE_TIMETAG_LEN_get() {
   int jresult ;
-  int result;
+  int32_t result;
   
-  result = (int)(8);
+  result = (int32_t)(int32_t)OSE_TIMETAG_LEN;
   jresult = result; 
   return jresult;
 }
@@ -1000,7 +1040,7 @@ SWIGEXPORT char * SWIGSTDCALL CSharp_OSE_BUNDLE_HEADER_get() {
   char * jresult ;
   char *result = 0 ;
   
-  result = (char *)("#bundle");
+  result = (char *)(char *)OSE_BUNDLE_HEADER;
   jresult = SWIG_csharp_string_callback((const char *)result); 
   return jresult;
 }
@@ -1008,15 +1048,15 @@ SWIGEXPORT char * SWIGSTDCALL CSharp_OSE_BUNDLE_HEADER_get() {
 
 SWIGEXPORT int SWIGSTDCALL CSharp_OSE_BUNDLE_HEADER_LEN_get() {
   int jresult ;
-  int result;
+  int32_t result;
   
-  result = (int)((8+8));
+  result = (int32_t)(int32_t)OSE_BUNDLE_HEADER_LEN;
   jresult = result; 
   return jresult;
 }
 
 
-SWIGEXPORT char * SWIGSTDCALL CSharp_OSE_EMPTY_TYPETAG_STRING_get() {
+SWIGEXPORT char * SWIGSTDCALL CSharp_OSE_EMPTY_TYPETAG_STRING__get() {
   char * jresult ;
   char *result = 0 ;
   
@@ -1026,11 +1066,21 @@ SWIGEXPORT char * SWIGSTDCALL CSharp_OSE_EMPTY_TYPETAG_STRING_get() {
 }
 
 
+SWIGEXPORT char * SWIGSTDCALL CSharp_OSE_EMPTY_TYPETAG_STRING_get() {
+  char * jresult ;
+  char *result = 0 ;
+  
+  result = (char *)(char *)OSE_EMPTY_TYPETAG_STRING;
+  jresult = SWIG_csharp_string_callback((const char *)result); 
+  return jresult;
+}
+
+
 SWIGEXPORT int SWIGSTDCALL CSharp_OSE_EMPTY_TYPETAG_STRING_LEN_get() {
   int jresult ;
-  int result;
+  int32_t result;
   
-  result = (int)(1);
+  result = (int32_t)(int32_t)OSE_EMPTY_TYPETAG_STRING_LEN;
   jresult = result; 
   return jresult;
 }
@@ -1038,15 +1088,15 @@ SWIGEXPORT int SWIGSTDCALL CSharp_OSE_EMPTY_TYPETAG_STRING_LEN_get() {
 
 SWIGEXPORT int SWIGSTDCALL CSharp_OSE_EMPTY_TYPETAG_STRING_SIZE_get() {
   int jresult ;
-  int result;
+  int32_t result;
   
-  result = (int)(4);
+  result = (int32_t)(int32_t)OSE_EMPTY_TYPETAG_STRING_SIZE;
   jresult = result; 
   return jresult;
 }
 
 
-SWIGEXPORT char * SWIGSTDCALL CSharp_OSE_ADDRESS_ANONVAL_get() {
+SWIGEXPORT char * SWIGSTDCALL CSharp_OSE_ADDRESS_ANONVAL__get() {
   char * jresult ;
   char *result = 0 ;
   
@@ -1056,11 +1106,21 @@ SWIGEXPORT char * SWIGSTDCALL CSharp_OSE_ADDRESS_ANONVAL_get() {
 }
 
 
+SWIGEXPORT char * SWIGSTDCALL CSharp_OSE_ADDRESS_ANONVAL_get() {
+  char * jresult ;
+  char *result = 0 ;
+  
+  result = (char *)(char *)OSE_ADDRESS_ANONVAL;
+  jresult = SWIG_csharp_string_callback((const char *)result); 
+  return jresult;
+}
+
+
 SWIGEXPORT int SWIGSTDCALL CSharp_OSE_ADDRESS_ANONVAL_LEN_get() {
   int jresult ;
-  int result;
+  int32_t result;
   
-  result = (int)(0);
+  result = (int32_t)(int32_t)OSE_ADDRESS_ANONVAL_LEN;
   jresult = result; 
   return jresult;
 }
@@ -1068,9 +1128,9 @@ SWIGEXPORT int SWIGSTDCALL CSharp_OSE_ADDRESS_ANONVAL_LEN_get() {
 
 SWIGEXPORT int SWIGSTDCALL CSharp_OSE_ADDRESS_ANONVAL_SIZE_get() {
   int jresult ;
-  int result;
+  int32_t result;
   
-  result = (int)(4);
+  result = (int32_t)(int32_t)OSE_ADDRESS_ANONVAL_SIZE;
   jresult = result; 
   return jresult;
 }
@@ -1080,7 +1140,7 @@ SWIGEXPORT char * SWIGSTDCALL CSharp_OSE_ADDRESS_ANONVAL_EMPTY_TYPETAG_STRING_ge
   char * jresult ;
   char *result = 0 ;
   
-  result = (char *)(",");
+  result = (char *)(char *)OSE_ADDRESS_ANONVAL_EMPTY_TYPETAG_STRING;
   jresult = SWIG_csharp_string_callback((const char *)result); 
   return jresult;
 }
@@ -1088,9 +1148,9 @@ SWIGEXPORT char * SWIGSTDCALL CSharp_OSE_ADDRESS_ANONVAL_EMPTY_TYPETAG_STRING_ge
 
 SWIGEXPORT int SWIGSTDCALL CSharp_OSE_ADDRESS_MIN_LEN_get() {
   int jresult ;
-  int result;
+  int32_t result;
   
-  result = (int)(0);
+  result = (int32_t)(int32_t)OSE_ADDRESS_MIN_LEN;
   jresult = result; 
   return jresult;
 }
@@ -1098,15 +1158,15 @@ SWIGEXPORT int SWIGSTDCALL CSharp_OSE_ADDRESS_MIN_LEN_get() {
 
 SWIGEXPORT int SWIGSTDCALL CSharp_OSE_ADDRESS_MIN_PLEN_get() {
   int jresult ;
-  int result;
+  int32_t result;
   
-  result = (int)(4);
+  result = (int32_t)(int32_t)OSE_ADDRESS_MIN_PLEN;
   jresult = result; 
   return jresult;
 }
 
 
-SWIGEXPORT char * SWIGSTDCALL CSharp_OSE_PPRINTPAYLOADITEM_ADDR_get() {
+SWIGEXPORT char * SWIGSTDCALL CSharp_OSE_PPRINTPAYLOADITEM_ADDR__get() {
   char * jresult ;
   char *result = 0 ;
   
@@ -1116,7 +1176,27 @@ SWIGEXPORT char * SWIGSTDCALL CSharp_OSE_PPRINTPAYLOADITEM_ADDR_get() {
 }
 
 
-SWIGEXPORT char * SWIGSTDCALL CSharp_OSE_GETPAYLOADITEMLENGTH_ADDR_get() {
+SWIGEXPORT char * SWIGSTDCALL CSharp_OSE_PPRINTPAYLOADITEM_ADDR_get() {
+  char * jresult ;
+  char *result = 0 ;
+  
+  result = (char *)(char *)OSE_PPRINTPAYLOADITEM_ADDR;
+  jresult = SWIG_csharp_string_callback((const char *)result); 
+  return jresult;
+}
+
+
+SWIGEXPORT int SWIGSTDCALL CSharp_OSE_PPRINTPAYLOADITEM_ADDR_LEN_get() {
+  int jresult ;
+  int32_t result;
+  
+  result = (int32_t)(int32_t)OSE_PPRINTPAYLOADITEM_ADDR_LEN;
+  jresult = result; 
+  return jresult;
+}
+
+
+SWIGEXPORT char * SWIGSTDCALL CSharp_OSE_GETPAYLOADITEMLENGTH_ADDR__get() {
   char * jresult ;
   char *result = 0 ;
   
@@ -1126,7 +1206,27 @@ SWIGEXPORT char * SWIGSTDCALL CSharp_OSE_GETPAYLOADITEMLENGTH_ADDR_get() {
 }
 
 
-SWIGEXPORT char * SWIGSTDCALL CSharp_OSE_GETPAYLOADITEMSIZE_ADDR_get() {
+SWIGEXPORT char * SWIGSTDCALL CSharp_OSE_GETPAYLOADITEMLENGTH_ADDR_get() {
+  char * jresult ;
+  char *result = 0 ;
+  
+  result = (char *)(char *)OSE_GETPAYLOADITEMLENGTH_ADDR;
+  jresult = SWIG_csharp_string_callback((const char *)result); 
+  return jresult;
+}
+
+
+SWIGEXPORT int SWIGSTDCALL CSharp_OSE_GETPAYLOADITEMLENGTH_ADDR_LEN_get() {
+  int jresult ;
+  int32_t result;
+  
+  result = (int32_t)(int32_t)OSE_GETPAYLOADITEMLENGTH_ADDR_LEN;
+  jresult = result; 
+  return jresult;
+}
+
+
+SWIGEXPORT char * SWIGSTDCALL CSharp_OSE_GETPAYLOADITEMSIZE_ADDR__get() {
   char * jresult ;
   char *result = 0 ;
   
@@ -1136,51 +1236,51 @@ SWIGEXPORT char * SWIGSTDCALL CSharp_OSE_GETPAYLOADITEMSIZE_ADDR_get() {
 }
 
 
-SWIGEXPORT char * SWIGSTDCALL CSharp_OSE_VERSION_get() {
+SWIGEXPORT char * SWIGSTDCALL CSharp_OSE_GETPAYLOADITEMSIZE_ADDR_get() {
   char * jresult ;
   char *result = 0 ;
   
-  result = (char *)("");
+  result = (char *)(char *)OSE_GETPAYLOADITEMSIZE_ADDR;
   jresult = SWIG_csharp_string_callback((const char *)result); 
   return jresult;
 }
 
 
-SWIGEXPORT char * SWIGSTDCALL CSharp_OSE_DATE_COMPILED_get() {
+SWIGEXPORT int SWIGSTDCALL CSharp_OSE_GETPAYLOADITEMSIZE_ADDR_LEN_get() {
+  int jresult ;
+  int32_t result;
+  
+  result = (int32_t)(int32_t)OSE_GETPAYLOADITEMSIZE_ADDR_LEN;
+  jresult = result; 
+  return jresult;
+}
+
+
+SWIGEXPORT char * SWIGSTDCALL CSharp_ose_version_string() {
   char * jresult ;
   char *result = 0 ;
   
-  result = (char *)("");
+  result = (char *)ose_version_string();
   jresult = SWIG_csharp_string_callback((const char *)result); 
   return jresult;
 }
 
 
-SWIGEXPORT char * SWIGSTDCALL CSharp_ose_version_string_get() {
+SWIGEXPORT char * SWIGSTDCALL CSharp_ose_debug_string() {
   char * jresult ;
   char *result = 0 ;
   
-  result = (char *)(char *)ose_version_string;
+  result = (char *)ose_debug_string();
   jresult = SWIG_csharp_string_callback((const char *)result); 
   return jresult;
 }
 
 
-SWIGEXPORT char * SWIGSTDCALL CSharp_ose_debug_string_get() {
+SWIGEXPORT char * SWIGSTDCALL CSharp_ose_date_compiled_string() {
   char * jresult ;
   char *result = 0 ;
   
-  result = (char *)(char *)ose_debug_string;
-  jresult = SWIG_csharp_string_callback((const char *)result); 
-  return jresult;
-}
-
-
-SWIGEXPORT char * SWIGSTDCALL CSharp_ose_date_compiled_string_get() {
-  char * jresult ;
-  char *result = 0 ;
-  
-  result = (char *)(char *)ose_date_compiled_string;
+  result = (char *)ose_date_compiled_string();
   jresult = SWIG_csharp_string_callback((const char *)result); 
   return jresult;
 }
@@ -1188,9 +1288,9 @@ SWIGEXPORT char * SWIGSTDCALL CSharp_ose_date_compiled_string_get() {
 
 SWIGEXPORT int SWIGSTDCALL CSharp_OSEVM_INPUT_SIZE_get() {
   int jresult ;
-  int result;
+  int32_t result;
   
-  result = (int)(1048576);
+  result = (int32_t)(int32_t)OSEVM_INPUT_SIZE;
   jresult = result; 
   return jresult;
 }
@@ -1198,9 +1298,9 @@ SWIGEXPORT int SWIGSTDCALL CSharp_OSEVM_INPUT_SIZE_get() {
 
 SWIGEXPORT int SWIGSTDCALL CSharp_OSEVM_STACK_SIZE_get() {
   int jresult ;
-  int result;
+  int32_t result;
   
-  result = (int)(1048576);
+  result = (int32_t)(int32_t)OSEVM_STACK_SIZE;
   jresult = result; 
   return jresult;
 }
@@ -1208,9 +1308,9 @@ SWIGEXPORT int SWIGSTDCALL CSharp_OSEVM_STACK_SIZE_get() {
 
 SWIGEXPORT int SWIGSTDCALL CSharp_OSEVM_ENV_SIZE_get() {
   int jresult ;
-  int result;
+  int32_t result;
   
-  result = (int)(1048576);
+  result = (int32_t)(int32_t)OSEVM_ENV_SIZE;
   jresult = result; 
   return jresult;
 }
@@ -1218,9 +1318,9 @@ SWIGEXPORT int SWIGSTDCALL CSharp_OSEVM_ENV_SIZE_get() {
 
 SWIGEXPORT int SWIGSTDCALL CSharp_OSEVM_CONTROL_SIZE_get() {
   int jresult ;
-  int result;
+  int32_t result;
   
-  result = (int)(1048576);
+  result = (int32_t)(int32_t)OSEVM_CONTROL_SIZE;
   jresult = result; 
   return jresult;
 }
@@ -1228,9 +1328,19 @@ SWIGEXPORT int SWIGSTDCALL CSharp_OSEVM_CONTROL_SIZE_get() {
 
 SWIGEXPORT int SWIGSTDCALL CSharp_OSEVM_DUMP_SIZE_get() {
   int jresult ;
-  int result;
+  int32_t result;
   
-  result = (int)(1048576);
+  result = (int32_t)(int32_t)OSEVM_DUMP_SIZE;
+  jresult = result; 
+  return jresult;
+}
+
+
+SWIGEXPORT int SWIGSTDCALL CSharp_OSEVM_TOTAL_SIZE_get() {
+  int jresult ;
+  int32_t result;
+  
+  result = (int32_t)(int32_t)OSEVM_TOTAL_SIZE;
   jresult = result; 
   return jresult;
 }
@@ -1788,38 +1898,6 @@ SWIGEXPORT int SWIGSTDCALL CSharp_ose_context_get_status(void * jarg1) {
 }
 
 
-SWIGEXPORT int SWIGSTDCALL CSharp_ose_get_memusage(void * jarg1) {
-  int jresult ;
-  ose_bundle arg1 ;
-  ose_bundle *argp1 ;
-  int32_t result;
-  
-  argp1 = (ose_bundle *)jarg1; 
-  if (!argp1) {
-    SWIG_CSharpSetPendingExceptionArgument(SWIG_CSharpArgumentNullException, "Attempt to dereference null ose_bundle", 0);
-    return 0;
-  }
-  arg1 = *argp1; 
-  result = (int32_t)ose_get_memusage(SWIG_STD_MOVE(arg1));
-  jresult = result; 
-  return jresult;
-}
-
-
-SWIGEXPORT void SWIGSTDCALL CSharp_ose_reset_memusage(void * jarg1) {
-  ose_bundle arg1 ;
-  ose_bundle *argp1 ;
-  
-  argp1 = (ose_bundle *)jarg1; 
-  if (!argp1) {
-    SWIG_CSharpSetPendingExceptionArgument(SWIG_CSharpArgumentNullException, "Attempt to dereference null ose_bundle", 0);
-    return ;
-  }
-  arg1 = *argp1; 
-  ose_reset_memusage(SWIG_STD_MOVE(arg1));
-}
-
-
 SWIGEXPORT int SWIGSTDCALL CSharp_OSE_CONTEXT_BUNDLE_OFFSET_get() {
   int jresult ;
   int result;
@@ -1848,31 +1926,11 @@ SWIGEXPORT int SWIGSTDCALL CSharp_ose_readSize(void * jarg1) {
 }
 
 
-SWIGEXPORT int SWIGSTDCALL CSharp_OSE_CONTEXT_MESSAGE_OVERHEAD_get() {
-  int jresult ;
-  int result;
-  
-  result = (int)(((4+4+8+4+4+4+4+4) +(8+8) +4));
-  jresult = result; 
-  return jresult;
-}
-
-
 SWIGEXPORT int SWIGSTDCALL CSharp_OSE_CONTEXT_STATUS_MESSAGE_SIZE_get() {
   int jresult ;
   int result;
   
   result = (int)(16);
-  jresult = result; 
-  return jresult;
-}
-
-
-SWIGEXPORT int SWIGSTDCALL CSharp_OSE_CONTEXT_MAX_OVERHEAD_get() {
-  int jresult ;
-  int result;
-  
-  result = (int)((4*2+(8+8) +((4+4+8+4+4+4+4+4) +(8+8) +4) +16+((4+4+8+4+4+4+4+4) +(8+8) +4)));
   jresult = result; 
   return jresult;
 }
@@ -5664,496 +5722,6 @@ SWIGEXPORT int SWIGSTDCALL CSharp_OSEVM_CACHE_SIZE_get() {
 }
 
 
-SWIGEXPORT int SWIGSTDCALL CSharp_OSEVM_CACHE_MSG_SIZE_get() {
-  int jresult ;
-  int result;
-  
-  result = (int)(((4+4+8+4+4+4+4+4) +(8+8) +4) +4+4+32+(30*4));
-  jresult = result; 
-  return jresult;
-}
-
-
-SWIGEXPORT int SWIGSTDCALL CSharp_OSEVM_CACHE_OFFSET_0_get() {
-  int jresult ;
-  int result;
-  
-  result = (int)((8+8) +(4+4+8+4+4+4+4+4) +(8+8) +4+4+32);
-  jresult = result; 
-  return jresult;
-}
-
-
-SWIGEXPORT int SWIGSTDCALL CSharp_OSEVM_CACHE_OFFSET_1_get() {
-  int jresult ;
-  int result;
-  
-  result = (int)((8+8) +(4+4+8+4+4+4+4+4) +(8+8) +4+4+32+4);
-  jresult = result; 
-  return jresult;
-}
-
-
-SWIGEXPORT int SWIGSTDCALL CSharp_OSEVM_CACHE_OFFSET_2_get() {
-  int jresult ;
-  int result;
-  
-  result = (int)((8+8) +(4+4+8+4+4+4+4+4) +(8+8) +4+4+32+4+4);
-  jresult = result; 
-  return jresult;
-}
-
-
-SWIGEXPORT int SWIGSTDCALL CSharp_OSEVM_CACHE_OFFSET_3_get() {
-  int jresult ;
-  int result;
-  
-  result = (int)((8+8) +(4+4+8+4+4+4+4+4) +(8+8) +4+4+32+4+4+4);
-  jresult = result; 
-  return jresult;
-}
-
-
-SWIGEXPORT int SWIGSTDCALL CSharp_OSEVM_CACHE_OFFSET_4_get() {
-  int jresult ;
-  int result;
-  
-  result = (int)((8+8) +(4+4+8+4+4+4+4+4) +(8+8) +4+4+32+4+4+4+4);
-  jresult = result; 
-  return jresult;
-}
-
-
-SWIGEXPORT int SWIGSTDCALL CSharp_OSEVM_CACHE_OFFSET_5_get() {
-  int jresult ;
-  int result;
-  
-  result = (int)((8+8) +(4+4+8+4+4+4+4+4) +(8+8) +4+4+32+4+4+4+4+4);
-  jresult = result; 
-  return jresult;
-}
-
-
-SWIGEXPORT int SWIGSTDCALL CSharp_OSEVM_CACHE_OFFSET_6_get() {
-  int jresult ;
-  int result;
-  
-  result = (int)((8+8) +(4+4+8+4+4+4+4+4) +(8+8) +4+4+32+4+4+4+4+4+4);
-  jresult = result; 
-  return jresult;
-}
-
-
-SWIGEXPORT int SWIGSTDCALL CSharp_OSEVM_CACHE_OFFSET_7_get() {
-  int jresult ;
-  int result;
-  
-  result = (int)((8+8) +(4+4+8+4+4+4+4+4) +(8+8) +4+4+32+4+4+4+4+4+4+4);
-  jresult = result; 
-  return jresult;
-}
-
-
-SWIGEXPORT int SWIGSTDCALL CSharp_OSEVM_CACHE_OFFSET_8_get() {
-  int jresult ;
-  int result;
-  
-  result = (int)((8+8) +(4+4+8+4+4+4+4+4) +(8+8) +4+4+32+4+4+4+4+4+4+4+4);
-  jresult = result; 
-  return jresult;
-}
-
-
-SWIGEXPORT int SWIGSTDCALL CSharp_OSEVM_CACHE_OFFSET_9_get() {
-  int jresult ;
-  int result;
-  
-  result = (int)((8+8) +(4+4+8+4+4+4+4+4) +(8+8) +4+4+32+4+4+4+4+4+4+4+4+4);
-  jresult = result; 
-  return jresult;
-}
-
-
-SWIGEXPORT int SWIGSTDCALL CSharp_OSEVM_CACHE_OFFSET_10_get() {
-  int jresult ;
-  int result;
-  
-  result = (int)((8+8) +(4+4+8+4+4+4+4+4) +(8+8) +4+4+32+4+4+4+4+4+4+4+4+4+4);
-  jresult = result; 
-  return jresult;
-}
-
-
-SWIGEXPORT int SWIGSTDCALL CSharp_OSEVM_CACHE_OFFSET_11_get() {
-  int jresult ;
-  int result;
-  
-  result = (int)((8+8) +(4+4+8+4+4+4+4+4) +(8+8) +4+4+32+4+4+4+4+4+4+4+4+4+4+4);
-  jresult = result; 
-  return jresult;
-}
-
-
-SWIGEXPORT int SWIGSTDCALL CSharp_OSEVM_CACHE_OFFSET_12_get() {
-  int jresult ;
-  int result;
-  
-  result = (int)((8+8) +(4+4+8+4+4+4+4+4) +(8+8) +4+4+32+4+4+4+4+4+4+4+4+4+4+4+4);
-  jresult = result; 
-  return jresult;
-}
-
-
-SWIGEXPORT int SWIGSTDCALL CSharp_OSEVM_CACHE_OFFSET_13_get() {
-  int jresult ;
-  int result;
-  
-  result = (int)((8+8) +(4+4+8+4+4+4+4+4) +(8+8) +4+4+32+4+4+4+4+4+4+4+4+4+4+4+4+4);
-  jresult = result; 
-  return jresult;
-}
-
-
-SWIGEXPORT int SWIGSTDCALL CSharp_OSEVM_CACHE_OFFSET_14_get() {
-  int jresult ;
-  int result;
-  
-  result = (int)((8+8) +(4+4+8+4+4+4+4+4) +(8+8) +4+4+32+4+4+4+4+4+4+4+4+4+4+4+4+4+4);
-  jresult = result; 
-  return jresult;
-}
-
-
-SWIGEXPORT int SWIGSTDCALL CSharp_OSEVM_CACHE_OFFSET_15_get() {
-  int jresult ;
-  int result;
-  
-  result = (int)((8+8) +(4+4+8+4+4+4+4+4) +(8+8) +4+4+32+4+4+4+4+4+4+4+4+4+4+4+4+4+4+4);
-  jresult = result; 
-  return jresult;
-}
-
-
-SWIGEXPORT int SWIGSTDCALL CSharp_OSEVM_CACHE_OFFSET_16_get() {
-  int jresult ;
-  int result;
-  
-  result = (int)((8+8) +(4+4+8+4+4+4+4+4) +(8+8) +4+4+32+4+4+4+4+4+4+4+4+4+4+4+4+4+4+4+4);
-  jresult = result; 
-  return jresult;
-}
-
-
-SWIGEXPORT int SWIGSTDCALL CSharp_OSEVM_CACHE_OFFSET_17_get() {
-  int jresult ;
-  int result;
-  
-  result = (int)((8+8) +(4+4+8+4+4+4+4+4) +(8+8) +4+4+32+4+4+4+4+4+4+4+4+4+4+4+4+4+4+4+4+4);
-  jresult = result; 
-  return jresult;
-}
-
-
-SWIGEXPORT int SWIGSTDCALL CSharp_OSEVM_CACHE_OFFSET_18_get() {
-  int jresult ;
-  int result;
-  
-  result = (int)((8+8) +(4+4+8+4+4+4+4+4) +(8+8) +4+4+32+4+4+4+4+4+4+4+4+4+4+4+4+4+4+4+4+4+4);
-  jresult = result; 
-  return jresult;
-}
-
-
-SWIGEXPORT int SWIGSTDCALL CSharp_OSEVM_CACHE_OFFSET_19_get() {
-  int jresult ;
-  int result;
-  
-  result = (int)((8+8) +(4+4+8+4+4+4+4+4) +(8+8) +4+4+32+4+4+4+4+4+4+4+4+4+4+4+4+4+4+4+4+4+4+4);
-  jresult = result; 
-  return jresult;
-}
-
-
-SWIGEXPORT int SWIGSTDCALL CSharp_OSEVM_CACHE_OFFSET_20_get() {
-  int jresult ;
-  int result;
-  
-  result = (int)((8+8) +(4+4+8+4+4+4+4+4) +(8+8) +4+4+32+4+4+4+4+4+4+4+4+4+4+4+4+4+4+4+4+4+4+4+4);
-  jresult = result; 
-  return jresult;
-}
-
-
-SWIGEXPORT int SWIGSTDCALL CSharp_OSEVM_CACHE_OFFSET_21_get() {
-  int jresult ;
-  int result;
-  
-  result = (int)((8+8) +(4+4+8+4+4+4+4+4) +(8+8) +4+4+32+4+4+4+4+4+4+4+4+4+4+4+4+4+4+4+4+4+4+4+4+4);
-  jresult = result; 
-  return jresult;
-}
-
-
-SWIGEXPORT int SWIGSTDCALL CSharp_OSEVM_CACHE_OFFSET_22_get() {
-  int jresult ;
-  int result;
-  
-  result = (int)((8+8) +(4+4+8+4+4+4+4+4) +(8+8) +4+4+32+4+4+4+4+4+4+4+4+4+4+4+4+4+4+4+4+4+4+4+4+4+4);
-  jresult = result; 
-  return jresult;
-}
-
-
-SWIGEXPORT int SWIGSTDCALL CSharp_OSEVM_CACHE_OFFSET_23_get() {
-  int jresult ;
-  int result;
-  
-  result = (int)((8+8) +(4+4+8+4+4+4+4+4) +(8+8) +4+4+32+4+4+4+4+4+4+4+4+4+4+4+4+4+4+4+4+4+4+4+4+4+4+4);
-  jresult = result; 
-  return jresult;
-}
-
-
-SWIGEXPORT int SWIGSTDCALL CSharp_OSEVM_CACHE_OFFSET_24_get() {
-  int jresult ;
-  int result;
-  
-  result = (int)((8+8) +(4+4+8+4+4+4+4+4) +(8+8) +4+4+32+4+4+4+4+4+4+4+4+4+4+4+4+4+4+4+4+4+4+4+4+4+4+4+4);
-  jresult = result; 
-  return jresult;
-}
-
-
-SWIGEXPORT int SWIGSTDCALL CSharp_OSEVM_CACHE_OFFSET_25_get() {
-  int jresult ;
-  int result;
-  
-  result = (int)((8+8) +(4+4+8+4+4+4+4+4) +(8+8) +4+4+32+4+4+4+4+4+4+4+4+4+4+4+4+4+4+4+4+4+4+4+4+4+4+4+4+4);
-  jresult = result; 
-  return jresult;
-}
-
-
-SWIGEXPORT int SWIGSTDCALL CSharp_OSEVM_CACHE_OFFSET_26_get() {
-  int jresult ;
-  int result;
-  
-  result = (int)((8+8) +(4+4+8+4+4+4+4+4) +(8+8) +4+4+32+4+4+4+4+4+4+4+4+4+4+4+4+4+4+4+4+4+4+4+4+4+4+4+4+4+4);
-  jresult = result; 
-  return jresult;
-}
-
-
-SWIGEXPORT int SWIGSTDCALL CSharp_OSEVM_CACHE_OFFSET_27_get() {
-  int jresult ;
-  int result;
-  
-  result = (int)((8+8) +(4+4+8+4+4+4+4+4) +(8+8) +4+4+32+4+4+4+4+4+4+4+4+4+4+4+4+4+4+4+4+4+4+4+4+4+4+4+4+4+4+4);
-  jresult = result; 
-  return jresult;
-}
-
-
-SWIGEXPORT int SWIGSTDCALL CSharp_OSEVM_CACHE_OFFSET_28_get() {
-  int jresult ;
-  int result;
-  
-  result = (int)((8+8) +(4+4+8+4+4+4+4+4) +(8+8) +4+4+32+4+4+4+4+4+4+4+4+4+4+4+4+4+4+4+4+4+4+4+4+4+4+4+4+4+4+4+4);
-  jresult = result; 
-  return jresult;
-}
-
-
-SWIGEXPORT int SWIGSTDCALL CSharp_OSEVM_CACHE_OFFSET_29_get() {
-  int jresult ;
-  int result;
-  
-  result = (int)((8+8) +(4+4+8+4+4+4+4+4) +(8+8) +4+4+32+4+4+4+4+4+4+4+4+4+4+4+4+4+4+4+4+4+4+4+4+4+4+4+4+4+4+4+4+4);
-  jresult = result; 
-  return jresult;
-}
-
-
-SWIGEXPORT int SWIGSTDCALL CSharp_OSEVM_CACHE_OFFSET_30_get() {
-  int jresult ;
-  int result;
-  
-  result = (int)((8+8) +(4+4+8+4+4+4+4+4) +(8+8) +4+4+32+4+4+4+4+4+4+4+4+4+4+4+4+4+4+4+4+4+4+4+4+4+4+4+4+4+4+4+4+4+4);
-  jresult = result; 
-  return jresult;
-}
-
-
-SWIGEXPORT int SWIGSTDCALL CSharp_OSEVM_CACHE_POINTER_get() {
-  int jresult ;
-  int result;
-  
-  result = (int)((8+8) +(4+4+8+4+4+4+4+4) +(8+8) +4+4+32);
-  jresult = result; 
-  return jresult;
-}
-
-
-SWIGEXPORT int SWIGSTDCALL CSharp_OSEVM_CACHE_FLAGS_get() {
-  int jresult ;
-  int result;
-  
-  result = (int)((8+8) +(4+4+8+4+4+4+4+4) +(8+8) +4+4+32+4);
-  jresult = result; 
-  return jresult;
-}
-
-
-SWIGEXPORT int SWIGSTDCALL CSharp_OSEVM_CACHE_OFFSET_INPUT_get() {
-  int jresult ;
-  int result;
-  
-  result = (int)((8+8) +(4+4+8+4+4+4+4+4) +(8+8) +4+4+32+4+4);
-  jresult = result; 
-  return jresult;
-}
-
-
-SWIGEXPORT int SWIGSTDCALL CSharp_OSEVM_CACHE_OFFSET_STACK_get() {
-  int jresult ;
-  int result;
-  
-  result = (int)((8+8) +(4+4+8+4+4+4+4+4) +(8+8) +4+4+32+4+4+4);
-  jresult = result; 
-  return jresult;
-}
-
-
-SWIGEXPORT int SWIGSTDCALL CSharp_OSEVM_CACHE_OFFSET_ENV_get() {
-  int jresult ;
-  int result;
-  
-  result = (int)((8+8) +(4+4+8+4+4+4+4+4) +(8+8) +4+4+32+4+4+4+4);
-  jresult = result; 
-  return jresult;
-}
-
-
-SWIGEXPORT int SWIGSTDCALL CSharp_OSEVM_CACHE_OFFSET_CONTROL_get() {
-  int jresult ;
-  int result;
-  
-  result = (int)((8+8) +(4+4+8+4+4+4+4+4) +(8+8) +4+4+32+4+4+4+4+4);
-  jresult = result; 
-  return jresult;
-}
-
-
-SWIGEXPORT int SWIGSTDCALL CSharp_OSEVM_CACHE_OFFSET_DUMP_get() {
-  int jresult ;
-  int result;
-  
-  result = (int)((8+8) +(4+4+8+4+4+4+4+4) +(8+8) +4+4+32+4+4+4+4+4+4);
-  jresult = result; 
-  return jresult;
-}
-
-
-SWIGEXPORT int SWIGSTDCALL CSharp_OSEVM_INPUT_CONTEXT_MESSAGE_OFFSET_get() {
-  int jresult ;
-  int result;
-  
-  result = (int)((8+8) +((4+4+8+4+4+4+4+4) +(8+8) +4) +4+4+32+(30*4));
-  jresult = result; 
-  return jresult;
-}
-
-
-SWIGEXPORT int SWIGSTDCALL CSharp_OSEVM_INPUT_BUNDLE_OFFSET_get() {
-  int jresult ;
-  int result;
-  
-  result = (int)((8+8) +((4+4+8+4+4+4+4+4) +(8+8) +4) +4+4+32+(30*4) +(4+4+8+4+4+4+4+4));
-  jresult = result; 
-  return jresult;
-}
-
-
-SWIGEXPORT int SWIGSTDCALL CSharp_OSEVM_STACK_CONTEXT_MESSAGE_OFFSET_get() {
-  int jresult ;
-  int result;
-  
-  result = (int)((8+8) +((4+4+8+4+4+4+4+4) +(8+8) +4) +4+4+32+(30*4) +((4+4+8+4+4+4+4+4) +(8+8) +4) +1048576);
-  jresult = result; 
-  return jresult;
-}
-
-
-SWIGEXPORT int SWIGSTDCALL CSharp_OSEVM_STACK_BUNDLE_OFFSET_get() {
-  int jresult ;
-  int result;
-  
-  result = (int)((8+8) +((4+4+8+4+4+4+4+4) +(8+8) +4) +4+4+32+(30*4) +((4+4+8+4+4+4+4+4) +(8+8) +4) +1048576+(4+4+8+4+4+4+4+4));
-  jresult = result; 
-  return jresult;
-}
-
-
-SWIGEXPORT int SWIGSTDCALL CSharp_OSEVM_ENV_CONTEXT_MESSAGE_OFFSET_get() {
-  int jresult ;
-  int result;
-  
-  result = (int)((8+8) +((4+4+8+4+4+4+4+4) +(8+8) +4) +4+4+32+(30*4) +((4+4+8+4+4+4+4+4) +(8+8) +4) +1048576+((4+4+8+4+4+4+4+4) +(8+8) +4) +1048576);
-  jresult = result; 
-  return jresult;
-}
-
-
-SWIGEXPORT int SWIGSTDCALL CSharp_OSEVM_ENV_BUNDLE_OFFSET_get() {
-  int jresult ;
-  int result;
-  
-  result = (int)((8+8) +((4+4+8+4+4+4+4+4) +(8+8) +4) +4+4+32+(30*4) +((4+4+8+4+4+4+4+4) +(8+8) +4) +1048576+((4+4+8+4+4+4+4+4) +(8+8) +4) +1048576+(4+4+8+4+4+4+4+4));
-  jresult = result; 
-  return jresult;
-}
-
-
-SWIGEXPORT int SWIGSTDCALL CSharp_OSEVM_CONTROL_CONTEXT_MESSAGE_OFFSET_get() {
-  int jresult ;
-  int result;
-  
-  result = (int)((8+8) +((4+4+8+4+4+4+4+4) +(8+8) +4) +4+4+32+(30*4) +((4+4+8+4+4+4+4+4) +(8+8) +4) +1048576+((4+4+8+4+4+4+4+4) +(8+8) +4) +1048576+((4+4+8+4+4+4+4+4) +(8+8) +4) +1048576);
-  jresult = result; 
-  return jresult;
-}
-
-
-SWIGEXPORT int SWIGSTDCALL CSharp_OSEVM_CONTROL_BUNDLE_OFFSET_get() {
-  int jresult ;
-  int result;
-  
-  result = (int)((8+8) +((4+4+8+4+4+4+4+4) +(8+8) +4) +4+4+32+(30*4) +((4+4+8+4+4+4+4+4) +(8+8) +4) +1048576+((4+4+8+4+4+4+4+4) +(8+8) +4) +1048576+((4+4+8+4+4+4+4+4) +(8+8) +4) +1048576+(4+4+8+4+4+4+4+4));
-  jresult = result; 
-  return jresult;
-}
-
-
-SWIGEXPORT int SWIGSTDCALL CSharp_OSEVM_DUMP_CONTEXT_MESSAGE_OFFSET_get() {
-  int jresult ;
-  int result;
-  
-  result = (int)((8+8) +((4+4+8+4+4+4+4+4) +(8+8) +4) +4+4+32+(30*4) +((4+4+8+4+4+4+4+4) +(8+8) +4) +1048576+((4+4+8+4+4+4+4+4) +(8+8) +4) +1048576+((4+4+8+4+4+4+4+4) +(8+8) +4) +1048576+((4+4+8+4+4+4+4+4) +(8+8) +4) +1048576);
-  jresult = result; 
-  return jresult;
-}
-
-
-SWIGEXPORT int SWIGSTDCALL CSharp_OSEVM_DUMP_BUNDLE_OFFSET_get() {
-  int jresult ;
-  int result;
-  
-  result = (int)((8+8) +((4+4+8+4+4+4+4+4) +(8+8) +4) +4+4+32+(30*4) +((4+4+8+4+4+4+4+4) +(8+8) +4) +1048576+((4+4+8+4+4+4+4+4) +(8+8) +4) +1048576+((4+4+8+4+4+4+4+4) +(8+8) +4) +1048576+((4+4+8+4+4+4+4+4) +(8+8) +4) +1048576+(4+4+8+4+4+4+4+4));
-  jresult = result; 
-  return jresult;
-}
-
-
 SWIGEXPORT void * SWIGSTDCALL CSharp_osevm_init(void * jarg1) {
   void * jresult ;
   ose_bundle arg1 ;
@@ -7218,6 +6786,18 @@ SWIGEXPORT void * SWIGSTDCALL CSharp_OSEBase_getself(void * jarg1) {
   
   arg1 = (OSEBase *)jarg1; 
   result = (void *)(arg1)->getself();
+  jresult = (void *)result; 
+  return jresult;
+}
+
+
+SWIGEXPORT void * SWIGSTDCALL CSharp_OSEBase_x(void * jarg1) {
+  void * jresult ;
+  OSEBase *arg1 = (OSEBase *) 0 ;
+  void *result = 0 ;
+  
+  arg1 = (OSEBase *)jarg1; 
+  result = (void *)(arg1)->x();
   jresult = (void *)result; 
   return jresult;
 }

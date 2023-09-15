@@ -25,23 +25,360 @@ public class libose {
     return ret;
   }
 
-  public static string ose_version_string {
+  public static char OSETT_ID {
     get {
-      string ret = libosePINVOKE.ose_version_string_get();
+      char ret = libosePINVOKE.OSETT_ID_get();
       return ret;
     } 
   }
 
-  public static string ose_debug_string {
+  public static string OSETTSTR_ID {
     get {
-      string ret = libosePINVOKE.ose_debug_string_get();
+      string ret = libosePINVOKE.OSETTSTR_ID_get();
       return ret;
     } 
   }
 
-  public static string ose_date_compiled_string {
+  public static char OSETT_INT32 {
     get {
-      string ret = libosePINVOKE.ose_date_compiled_string_get();
+      char ret = libosePINVOKE.OSETT_INT32_get();
+      return ret;
+    } 
+  }
+
+  public static string OSETTSTR_INT32 {
+    get {
+      string ret = libosePINVOKE.OSETTSTR_INT32_get();
+      return ret;
+    } 
+  }
+
+  public static char OSETT_FLOAT {
+    get {
+      char ret = libosePINVOKE.OSETT_FLOAT_get();
+      return ret;
+    } 
+  }
+
+  public static string OSETTSTR_FLOAT {
+    get {
+      string ret = libosePINVOKE.OSETTSTR_FLOAT_get();
+      return ret;
+    } 
+  }
+
+  public static char OSETT_STRING {
+    get {
+      char ret = libosePINVOKE.OSETT_STRING_get();
+      return ret;
+    } 
+  }
+
+  public static string OSETTSTR_STRING {
+    get {
+      string ret = libosePINVOKE.OSETTSTR_STRING_get();
+      return ret;
+    } 
+  }
+
+  public static char OSETT_BLOB {
+    get {
+      char ret = libosePINVOKE.OSETT_BLOB_get();
+      return ret;
+    } 
+  }
+
+  public static string OSETTSTR_BLOB {
+    get {
+      string ret = libosePINVOKE.OSETTSTR_BLOB_get();
+      return ret;
+    } 
+  }
+
+  public static char OSETT_TRUE {
+    get {
+      char ret = libosePINVOKE.OSETT_TRUE_get();
+      return ret;
+    } 
+  }
+
+  public static string OSETTSTR_TRUE {
+    get {
+      string ret = libosePINVOKE.OSETTSTR_TRUE_get();
+      return ret;
+    } 
+  }
+
+  public static char OSETT_FALSE {
+    get {
+      char ret = libosePINVOKE.OSETT_FALSE_get();
+      return ret;
+    } 
+  }
+
+  public static string OSETTSTR_FALSE {
+    get {
+      string ret = libosePINVOKE.OSETTSTR_FALSE_get();
+      return ret;
+    } 
+  }
+
+  public static char OSETT_NOTYPETAG {
+    get {
+      char ret = libosePINVOKE.OSETT_NOTYPETAG_get();
+      return ret;
+    } 
+  }
+
+  public static string OSETTSTR_NOTYPETAG {
+    get {
+      string ret = libosePINVOKE.OSETTSTR_NOTYPETAG_get();
+      return ret;
+    } 
+  }
+
+  public static char OSETT_BUNDLE {
+    get {
+      char ret = libosePINVOKE.OSETT_BUNDLE_get();
+      return ret;
+    } 
+  }
+
+  public static string OSETTSTR_BUNDLE {
+    get {
+      string ret = libosePINVOKE.OSETTSTR_BUNDLE_get();
+      return ret;
+    } 
+  }
+
+  public static char OSETT_MESSAGE {
+    get {
+      char ret = libosePINVOKE.OSETT_MESSAGE_get();
+      return ret;
+    } 
+  }
+
+  public static string OSETTSTR_MESSAGE {
+    get {
+      string ret = libosePINVOKE.OSETTSTR_MESSAGE_get();
+      return ret;
+    } 
+  }
+
+  public static char OSETT_ALIGNEDPTR {
+    get {
+      char ret = libosePINVOKE.OSETT_ALIGNEDPTR_get();
+      return ret;
+    } 
+  }
+
+  public static string OSETTSTR_ALIGNEDPTR {
+    get {
+      string ret = libosePINVOKE.OSETTSTR_ALIGNEDPTR_get();
+      return ret;
+    } 
+  }
+
+  public static string OSE_BUNDLE_ID {
+    get {
+      string ret = libosePINVOKE.OSE_BUNDLE_ID_get();
+      return ret;
+    } 
+  }
+
+  public static int OSE_BUNDLE_ID_LEN {
+    get {
+      int ret = libosePINVOKE.OSE_BUNDLE_ID_LEN_get();
+      return ret;
+    } 
+  }
+
+  public static string OSE_TIMETAG_NULL {
+    get {
+      string ret = libosePINVOKE.OSE_TIMETAG_NULL_get();
+      return ret;
+    } 
+  }
+
+  public static int OSE_TIMETAG_LEN {
+    get {
+      int ret = libosePINVOKE.OSE_TIMETAG_LEN_get();
+      return ret;
+    } 
+  }
+
+  public static string OSE_BUNDLE_HEADER {
+    get {
+      string ret = libosePINVOKE.OSE_BUNDLE_HEADER_get();
+      return ret;
+    } 
+  }
+
+  public static int OSE_BUNDLE_HEADER_LEN {
+    get {
+      int ret = libosePINVOKE.OSE_BUNDLE_HEADER_LEN_get();
+      return ret;
+    } 
+  }
+
+  public static string OSE_EMPTY_TYPETAG_STRING {
+    get {
+      string ret = libosePINVOKE.OSE_EMPTY_TYPETAG_STRING_get();
+      return ret;
+    } 
+  }
+
+  public static int OSE_EMPTY_TYPETAG_STRING_LEN {
+    get {
+      int ret = libosePINVOKE.OSE_EMPTY_TYPETAG_STRING_LEN_get();
+      return ret;
+    } 
+  }
+
+  public static int OSE_EMPTY_TYPETAG_STRING_SIZE {
+    get {
+      int ret = libosePINVOKE.OSE_EMPTY_TYPETAG_STRING_SIZE_get();
+      return ret;
+    } 
+  }
+
+  public static string OSE_ADDRESS_ANONVAL {
+    get {
+      string ret = libosePINVOKE.OSE_ADDRESS_ANONVAL_get();
+      return ret;
+    } 
+  }
+
+  public static int OSE_ADDRESS_ANONVAL_LEN {
+    get {
+      int ret = libosePINVOKE.OSE_ADDRESS_ANONVAL_LEN_get();
+      return ret;
+    } 
+  }
+
+  public static int OSE_ADDRESS_ANONVAL_SIZE {
+    get {
+      int ret = libosePINVOKE.OSE_ADDRESS_ANONVAL_SIZE_get();
+      return ret;
+    } 
+  }
+
+  public static string OSE_ADDRESS_ANONVAL_EMPTY_TYPETAG_STRING {
+    get {
+      string ret = libosePINVOKE.OSE_ADDRESS_ANONVAL_EMPTY_TYPETAG_STRING_get();
+      return ret;
+    } 
+  }
+
+  public static int OSE_ADDRESS_MIN_LEN {
+    get {
+      int ret = libosePINVOKE.OSE_ADDRESS_MIN_LEN_get();
+      return ret;
+    } 
+  }
+
+  public static int OSE_ADDRESS_MIN_PLEN {
+    get {
+      int ret = libosePINVOKE.OSE_ADDRESS_MIN_PLEN_get();
+      return ret;
+    } 
+  }
+
+  public static string OSE_PPRINTPAYLOADITEM_ADDR {
+    get {
+      string ret = libosePINVOKE.OSE_PPRINTPAYLOADITEM_ADDR_get();
+      return ret;
+    } 
+  }
+
+  public static int OSE_PPRINTPAYLOADITEM_ADDR_LEN {
+    get {
+      int ret = libosePINVOKE.OSE_PPRINTPAYLOADITEM_ADDR_LEN_get();
+      return ret;
+    } 
+  }
+
+  public static string OSE_GETPAYLOADITEMLENGTH_ADDR {
+    get {
+      string ret = libosePINVOKE.OSE_GETPAYLOADITEMLENGTH_ADDR_get();
+      return ret;
+    } 
+  }
+
+  public static int OSE_GETPAYLOADITEMLENGTH_ADDR_LEN {
+    get {
+      int ret = libosePINVOKE.OSE_GETPAYLOADITEMLENGTH_ADDR_LEN_get();
+      return ret;
+    } 
+  }
+
+  public static string OSE_GETPAYLOADITEMSIZE_ADDR {
+    get {
+      string ret = libosePINVOKE.OSE_GETPAYLOADITEMSIZE_ADDR_get();
+      return ret;
+    } 
+  }
+
+  public static int OSE_GETPAYLOADITEMSIZE_ADDR_LEN {
+    get {
+      int ret = libosePINVOKE.OSE_GETPAYLOADITEMSIZE_ADDR_LEN_get();
+      return ret;
+    } 
+  }
+
+  public static string ose_version_string() {
+    string ret = libosePINVOKE.ose_version_string();
+    return ret;
+  }
+
+  public static string ose_debug_string() {
+    string ret = libosePINVOKE.ose_debug_string();
+    return ret;
+  }
+
+  public static string ose_date_compiled_string() {
+    string ret = libosePINVOKE.ose_date_compiled_string();
+    return ret;
+  }
+
+  public static int OSEVM_INPUT_SIZE {
+    get {
+      int ret = libosePINVOKE.OSEVM_INPUT_SIZE_get();
+      return ret;
+    } 
+  }
+
+  public static int OSEVM_STACK_SIZE {
+    get {
+      int ret = libosePINVOKE.OSEVM_STACK_SIZE_get();
+      return ret;
+    } 
+  }
+
+  public static int OSEVM_ENV_SIZE {
+    get {
+      int ret = libosePINVOKE.OSEVM_ENV_SIZE_get();
+      return ret;
+    } 
+  }
+
+  public static int OSEVM_CONTROL_SIZE {
+    get {
+      int ret = libosePINVOKE.OSEVM_CONTROL_SIZE_get();
+      return ret;
+    } 
+  }
+
+  public static int OSEVM_DUMP_SIZE {
+    get {
+      int ret = libosePINVOKE.OSEVM_DUMP_SIZE_get();
+      return ret;
+    } 
+  }
+
+  public static int OSEVM_TOTAL_SIZE {
+    get {
+      int ret = libosePINVOKE.OSEVM_TOTAL_SIZE_get();
       return ret;
     } 
   }
@@ -55,17 +392,6 @@ public class libose {
     int ret = libosePINVOKE.ose_context_get_status(ose_bundle.getCPtr(b));
     if (libosePINVOKE.SWIGPendingException.Pending) throw libosePINVOKE.SWIGPendingException.Retrieve();
     return ret;
-  }
-
-  public static int ose_get_memusage(ose_bundle b) {
-    int ret = libosePINVOKE.ose_get_memusage(ose_bundle.getCPtr(b));
-    if (libosePINVOKE.SWIGPendingException.Pending) throw libosePINVOKE.SWIGPendingException.Retrieve();
-    return ret;
-  }
-
-  public static void ose_reset_memusage(ose_bundle b) {
-    libosePINVOKE.ose_reset_memusage(ose_bundle.getCPtr(b));
-    if (libosePINVOKE.SWIGPendingException.Pending) throw libosePINVOKE.SWIGPendingException.Retrieve();
   }
 
   public static int ose_readSize(ose_bundle bundle) {
@@ -1496,53 +1822,15 @@ public class libose {
   public static readonly int OSE_CONF_VM_ENV_SIZE = libosePINVOKE.OSE_CONF_VM_ENV_SIZE_get();
   public static readonly int OSE_CONF_VM_CONTROL_SIZE = libosePINVOKE.OSE_CONF_VM_CONTROL_SIZE_get();
   public static readonly int OSE_CONF_VM_DUMP_SIZE = libosePINVOKE.OSE_CONF_VM_DUMP_SIZE_get();
-  public static readonly char OSETT_ID = libosePINVOKE.OSETT_ID_get();
-  public static readonly string OSETTSTR_ID = libosePINVOKE.OSETTSTR_ID_get();
-  public static readonly char OSETT_INT32 = libosePINVOKE.OSETT_INT32_get();
-  public static readonly string OSETTSTR_INT32 = libosePINVOKE.OSETTSTR_INT32_get();
-  public static readonly char OSETT_FLOAT = libosePINVOKE.OSETT_FLOAT_get();
-  public static readonly string OSETTSTR_FLOAT = libosePINVOKE.OSETTSTR_FLOAT_get();
-  public static readonly char OSETT_STRING = libosePINVOKE.OSETT_STRING_get();
-  public static readonly string OSETTSTR_STRING = libosePINVOKE.OSETTSTR_STRING_get();
-  public static readonly char OSETT_BLOB = libosePINVOKE.OSETT_BLOB_get();
-  public static readonly string OSETTSTR_BLOB = libosePINVOKE.OSETTSTR_BLOB_get();
-  public static readonly char OSETT_TRUE = libosePINVOKE.OSETT_TRUE_get();
-  public static readonly string OSETTSTR_TRUE = libosePINVOKE.OSETTSTR_TRUE_get();
-  public static readonly char OSETT_FALSE = libosePINVOKE.OSETT_FALSE_get();
-  public static readonly string OSETTSTR_FALSE = libosePINVOKE.OSETTSTR_FALSE_get();
-  public static readonly int OSETT_NOTYPETAG = libosePINVOKE.OSETT_NOTYPETAG_get();
-  public static readonly string OSETTSTR_NOTYPETAG = libosePINVOKE.OSETTSTR_NOTYPETAG_get();
-  public static readonly char OSETT_BUNDLE = libosePINVOKE.OSETT_BUNDLE_get();
-  public static readonly string OSETTSTR_BUNDLE = libosePINVOKE.OSETTSTR_BUNDLE_get();
-  public static readonly char OSETT_MESSAGE = libosePINVOKE.OSETT_MESSAGE_get();
-  public static readonly string OSETTSTR_MESSAGE = libosePINVOKE.OSETTSTR_MESSAGE_get();
-  public static readonly char OSETT_ALIGNEDPTR = libosePINVOKE.OSETT_ALIGNEDPTR_get();
-  public static readonly string OSETTSTR_ALIGNEDPTR = libosePINVOKE.OSETTSTR_ALIGNEDPTR_get();
-  public static readonly string OSE_BUNDLE_ID = libosePINVOKE.OSE_BUNDLE_ID_get();
-  public static readonly int OSE_BUNDLE_ID_LEN = libosePINVOKE.OSE_BUNDLE_ID_LEN_get();
-  public static readonly string OSE_TIMETAG_NULL = libosePINVOKE.OSE_TIMETAG_NULL_get();
-  public static readonly int OSE_TIMETAG_LEN = libosePINVOKE.OSE_TIMETAG_LEN_get();
-  public static readonly string OSE_BUNDLE_HEADER = libosePINVOKE.OSE_BUNDLE_HEADER_get();
-  public static readonly int OSE_BUNDLE_HEADER_LEN = libosePINVOKE.OSE_BUNDLE_HEADER_LEN_get();
-  public static readonly string OSE_EMPTY_TYPETAG_STRING = libosePINVOKE.OSE_EMPTY_TYPETAG_STRING_get();
-  public static readonly int OSE_EMPTY_TYPETAG_STRING_LEN = libosePINVOKE.OSE_EMPTY_TYPETAG_STRING_LEN_get();
-  public static readonly int OSE_EMPTY_TYPETAG_STRING_SIZE = libosePINVOKE.OSE_EMPTY_TYPETAG_STRING_SIZE_get();
-  public static readonly string OSE_ADDRESS_ANONVAL = libosePINVOKE.OSE_ADDRESS_ANONVAL_get();
-  public static readonly int OSE_ADDRESS_ANONVAL_LEN = libosePINVOKE.OSE_ADDRESS_ANONVAL_LEN_get();
-  public static readonly int OSE_ADDRESS_ANONVAL_SIZE = libosePINVOKE.OSE_ADDRESS_ANONVAL_SIZE_get();
-  public static readonly string OSE_ADDRESS_ANONVAL_EMPTY_TYPETAG_STRING = libosePINVOKE.OSE_ADDRESS_ANONVAL_EMPTY_TYPETAG_STRING_get();
-  public static readonly int OSE_ADDRESS_MIN_LEN = libosePINVOKE.OSE_ADDRESS_MIN_LEN_get();
-  public static readonly int OSE_ADDRESS_MIN_PLEN = libosePINVOKE.OSE_ADDRESS_MIN_PLEN_get();
-  public static readonly string OSE_PPRINTPAYLOADITEM_ADDR = libosePINVOKE.OSE_PPRINTPAYLOADITEM_ADDR_get();
-  public static readonly string OSE_GETPAYLOADITEMLENGTH_ADDR = libosePINVOKE.OSE_GETPAYLOADITEMLENGTH_ADDR_get();
-  public static readonly string OSE_GETPAYLOADITEMSIZE_ADDR = libosePINVOKE.OSE_GETPAYLOADITEMSIZE_ADDR_get();
-  public static readonly string OSE_VERSION = libosePINVOKE.OSE_VERSION_get();
-  public static readonly string OSE_DATE_COMPILED = libosePINVOKE.OSE_DATE_COMPILED_get();
-  public static readonly int OSEVM_INPUT_SIZE = libosePINVOKE.OSEVM_INPUT_SIZE_get();
-  public static readonly int OSEVM_STACK_SIZE = libosePINVOKE.OSEVM_STACK_SIZE_get();
-  public static readonly int OSEVM_ENV_SIZE = libosePINVOKE.OSEVM_ENV_SIZE_get();
-  public static readonly int OSEVM_CONTROL_SIZE = libosePINVOKE.OSEVM_CONTROL_SIZE_get();
-  public static readonly int OSEVM_DUMP_SIZE = libosePINVOKE.OSEVM_DUMP_SIZE_get();
+  public static readonly string OSE_BUNDLE_ID_ = libosePINVOKE.OSE_BUNDLE_ID__get();
+  public static readonly int OSE_BUNDLE_ID_LEN_ = libosePINVOKE.OSE_BUNDLE_ID_LEN__get();
+  public static readonly string OSE_TIMETAG_NULL_ = libosePINVOKE.OSE_TIMETAG_NULL__get();
+  public static readonly int OSE_TIMETAG_LEN_ = libosePINVOKE.OSE_TIMETAG_LEN__get();
+  public static readonly string OSE_EMPTY_TYPETAG_STRING_ = libosePINVOKE.OSE_EMPTY_TYPETAG_STRING__get();
+  public static readonly string OSE_ADDRESS_ANONVAL_ = libosePINVOKE.OSE_ADDRESS_ANONVAL__get();
+  public static readonly string OSE_PPRINTPAYLOADITEM_ADDR_ = libosePINVOKE.OSE_PPRINTPAYLOADITEM_ADDR__get();
+  public static readonly string OSE_GETPAYLOADITEMLENGTH_ADDR_ = libosePINVOKE.OSE_GETPAYLOADITEMLENGTH_ADDR__get();
+  public static readonly string OSE_GETPAYLOADITEMSIZE_ADDR_ = libosePINVOKE.OSE_GETPAYLOADITEMSIZE_ADDR__get();
   public static readonly int OSE_CONTEXT_ALIGNMENT = libosePINVOKE.OSE_CONTEXT_ALIGNMENT_get();
   public static readonly int OSE_CONTEXT_BUNDLE_SIZE_OFFSET = libosePINVOKE.OSE_CONTEXT_BUNDLE_SIZE_OFFSET_get();
   public static readonly int OSE_CONTEXT_TOTAL_SIZE_OFFSET = libosePINVOKE.OSE_CONTEXT_TOTAL_SIZE_OFFSET_get();
@@ -1550,9 +1838,7 @@ public class libose {
   public static readonly int OSE_CONTEXT_STATUS_OFFSET = libosePINVOKE.OSE_CONTEXT_STATUS_OFFSET_get();
   public static readonly int OSE_CONTEXT_MEMUSAGE_OFFSET = libosePINVOKE.OSE_CONTEXT_MEMUSAGE_OFFSET_get();
   public static readonly int OSE_CONTEXT_BUNDLE_OFFSET = libosePINVOKE.OSE_CONTEXT_BUNDLE_OFFSET_get();
-  public static readonly int OSE_CONTEXT_MESSAGE_OVERHEAD = libosePINVOKE.OSE_CONTEXT_MESSAGE_OVERHEAD_get();
   public static readonly int OSE_CONTEXT_STATUS_MESSAGE_SIZE = libosePINVOKE.OSE_CONTEXT_STATUS_MESSAGE_SIZE_get();
-  public static readonly int OSE_CONTEXT_MAX_OVERHEAD = libosePINVOKE.OSE_CONTEXT_MAX_OVERHEAD_get();
   public static readonly int OSE_MATCH_BACKTRACK_LIMIT = libosePINVOKE.OSE_MATCH_BACKTRACK_LIMIT_get();
   public static readonly int OSE_MATCH_ENABLE_2STARS = libosePINVOKE.OSE_MATCH_ENABLE_2STARS_get();
   public static readonly int OSE_MATCH_ENABLE_NSTARS = libosePINVOKE.OSE_MATCH_ENABLE_NSTARS_get();
@@ -1569,54 +1855,5 @@ public class libose {
   public static readonly string OSEVM_ADDR_HOST = libosePINVOKE.OSEVM_ADDR_HOST_get();
   public static readonly string OSEVM_ADDR_CACHE = libosePINVOKE.OSEVM_ADDR_CACHE_get();
   public static readonly int OSEVM_CACHE_SIZE = libosePINVOKE.OSEVM_CACHE_SIZE_get();
-  public static readonly int OSEVM_CACHE_MSG_SIZE = libosePINVOKE.OSEVM_CACHE_MSG_SIZE_get();
-  public static readonly int OSEVM_CACHE_OFFSET_0 = libosePINVOKE.OSEVM_CACHE_OFFSET_0_get();
-  public static readonly int OSEVM_CACHE_OFFSET_1 = libosePINVOKE.OSEVM_CACHE_OFFSET_1_get();
-  public static readonly int OSEVM_CACHE_OFFSET_2 = libosePINVOKE.OSEVM_CACHE_OFFSET_2_get();
-  public static readonly int OSEVM_CACHE_OFFSET_3 = libosePINVOKE.OSEVM_CACHE_OFFSET_3_get();
-  public static readonly int OSEVM_CACHE_OFFSET_4 = libosePINVOKE.OSEVM_CACHE_OFFSET_4_get();
-  public static readonly int OSEVM_CACHE_OFFSET_5 = libosePINVOKE.OSEVM_CACHE_OFFSET_5_get();
-  public static readonly int OSEVM_CACHE_OFFSET_6 = libosePINVOKE.OSEVM_CACHE_OFFSET_6_get();
-  public static readonly int OSEVM_CACHE_OFFSET_7 = libosePINVOKE.OSEVM_CACHE_OFFSET_7_get();
-  public static readonly int OSEVM_CACHE_OFFSET_8 = libosePINVOKE.OSEVM_CACHE_OFFSET_8_get();
-  public static readonly int OSEVM_CACHE_OFFSET_9 = libosePINVOKE.OSEVM_CACHE_OFFSET_9_get();
-  public static readonly int OSEVM_CACHE_OFFSET_10 = libosePINVOKE.OSEVM_CACHE_OFFSET_10_get();
-  public static readonly int OSEVM_CACHE_OFFSET_11 = libosePINVOKE.OSEVM_CACHE_OFFSET_11_get();
-  public static readonly int OSEVM_CACHE_OFFSET_12 = libosePINVOKE.OSEVM_CACHE_OFFSET_12_get();
-  public static readonly int OSEVM_CACHE_OFFSET_13 = libosePINVOKE.OSEVM_CACHE_OFFSET_13_get();
-  public static readonly int OSEVM_CACHE_OFFSET_14 = libosePINVOKE.OSEVM_CACHE_OFFSET_14_get();
-  public static readonly int OSEVM_CACHE_OFFSET_15 = libosePINVOKE.OSEVM_CACHE_OFFSET_15_get();
-  public static readonly int OSEVM_CACHE_OFFSET_16 = libosePINVOKE.OSEVM_CACHE_OFFSET_16_get();
-  public static readonly int OSEVM_CACHE_OFFSET_17 = libosePINVOKE.OSEVM_CACHE_OFFSET_17_get();
-  public static readonly int OSEVM_CACHE_OFFSET_18 = libosePINVOKE.OSEVM_CACHE_OFFSET_18_get();
-  public static readonly int OSEVM_CACHE_OFFSET_19 = libosePINVOKE.OSEVM_CACHE_OFFSET_19_get();
-  public static readonly int OSEVM_CACHE_OFFSET_20 = libosePINVOKE.OSEVM_CACHE_OFFSET_20_get();
-  public static readonly int OSEVM_CACHE_OFFSET_21 = libosePINVOKE.OSEVM_CACHE_OFFSET_21_get();
-  public static readonly int OSEVM_CACHE_OFFSET_22 = libosePINVOKE.OSEVM_CACHE_OFFSET_22_get();
-  public static readonly int OSEVM_CACHE_OFFSET_23 = libosePINVOKE.OSEVM_CACHE_OFFSET_23_get();
-  public static readonly int OSEVM_CACHE_OFFSET_24 = libosePINVOKE.OSEVM_CACHE_OFFSET_24_get();
-  public static readonly int OSEVM_CACHE_OFFSET_25 = libosePINVOKE.OSEVM_CACHE_OFFSET_25_get();
-  public static readonly int OSEVM_CACHE_OFFSET_26 = libosePINVOKE.OSEVM_CACHE_OFFSET_26_get();
-  public static readonly int OSEVM_CACHE_OFFSET_27 = libosePINVOKE.OSEVM_CACHE_OFFSET_27_get();
-  public static readonly int OSEVM_CACHE_OFFSET_28 = libosePINVOKE.OSEVM_CACHE_OFFSET_28_get();
-  public static readonly int OSEVM_CACHE_OFFSET_29 = libosePINVOKE.OSEVM_CACHE_OFFSET_29_get();
-  public static readonly int OSEVM_CACHE_OFFSET_30 = libosePINVOKE.OSEVM_CACHE_OFFSET_30_get();
-  public static readonly int OSEVM_CACHE_POINTER = libosePINVOKE.OSEVM_CACHE_POINTER_get();
-  public static readonly int OSEVM_CACHE_FLAGS = libosePINVOKE.OSEVM_CACHE_FLAGS_get();
-  public static readonly int OSEVM_CACHE_OFFSET_INPUT = libosePINVOKE.OSEVM_CACHE_OFFSET_INPUT_get();
-  public static readonly int OSEVM_CACHE_OFFSET_STACK = libosePINVOKE.OSEVM_CACHE_OFFSET_STACK_get();
-  public static readonly int OSEVM_CACHE_OFFSET_ENV = libosePINVOKE.OSEVM_CACHE_OFFSET_ENV_get();
-  public static readonly int OSEVM_CACHE_OFFSET_CONTROL = libosePINVOKE.OSEVM_CACHE_OFFSET_CONTROL_get();
-  public static readonly int OSEVM_CACHE_OFFSET_DUMP = libosePINVOKE.OSEVM_CACHE_OFFSET_DUMP_get();
-  public static readonly int OSEVM_INPUT_CONTEXT_MESSAGE_OFFSET = libosePINVOKE.OSEVM_INPUT_CONTEXT_MESSAGE_OFFSET_get();
-  public static readonly int OSEVM_INPUT_BUNDLE_OFFSET = libosePINVOKE.OSEVM_INPUT_BUNDLE_OFFSET_get();
-  public static readonly int OSEVM_STACK_CONTEXT_MESSAGE_OFFSET = libosePINVOKE.OSEVM_STACK_CONTEXT_MESSAGE_OFFSET_get();
-  public static readonly int OSEVM_STACK_BUNDLE_OFFSET = libosePINVOKE.OSEVM_STACK_BUNDLE_OFFSET_get();
-  public static readonly int OSEVM_ENV_CONTEXT_MESSAGE_OFFSET = libosePINVOKE.OSEVM_ENV_CONTEXT_MESSAGE_OFFSET_get();
-  public static readonly int OSEVM_ENV_BUNDLE_OFFSET = libosePINVOKE.OSEVM_ENV_BUNDLE_OFFSET_get();
-  public static readonly int OSEVM_CONTROL_CONTEXT_MESSAGE_OFFSET = libosePINVOKE.OSEVM_CONTROL_CONTEXT_MESSAGE_OFFSET_get();
-  public static readonly int OSEVM_CONTROL_BUNDLE_OFFSET = libosePINVOKE.OSEVM_CONTROL_BUNDLE_OFFSET_get();
-  public static readonly int OSEVM_DUMP_CONTEXT_MESSAGE_OFFSET = libosePINVOKE.OSEVM_DUMP_CONTEXT_MESSAGE_OFFSET_get();
-  public static readonly int OSEVM_DUMP_BUNDLE_OFFSET = libosePINVOKE.OSEVM_DUMP_BUNDLE_OFFSET_get();
   public static readonly string OSEVM_EVALTYPE_ADDR = libosePINVOKE.OSEVM_EVALTYPE_ADDR_get();
 }

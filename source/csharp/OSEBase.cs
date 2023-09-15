@@ -164,6 +164,12 @@ public class OSEBase : global::System.IDisposable {
     return ret;
   }
 
+  public SWIGTYPE_p_void x() {
+    global::System.IntPtr cPtr = libosePINVOKE.OSEBase_x(swigCPtr);
+    SWIGTYPE_p_void ret = (cPtr == global::System.IntPtr.Zero) ? null : new SWIGTYPE_p_void(cPtr, false);
+    return ret;
+  }
+
   public virtual SWIGTYPE_p_void getfnptr(string fname) {
     global::System.IntPtr cPtr = (SwigDerivedClassHasMethod("getfnptr", swigMethodTypes1) ? libosePINVOKE.OSEBase_getfnptrSwigExplicitOSEBase(swigCPtr, fname) : libosePINVOKE.OSEBase_getfnptr(swigCPtr, fname));
     SWIGTYPE_p_void ret = (cPtr == global::System.IntPtr.Zero) ? null : new SWIGTYPE_p_void(cPtr, false);

@@ -289,7 +289,7 @@ class libosePINVOKE {
   public static extern string OSETTSTR_FALSE_get();
 
   [global::System.Runtime.InteropServices.DllImport("libose", EntryPoint="CSharp_OSETT_NOTYPETAG_get")]
-  public static extern int OSETT_NOTYPETAG_get();
+  public static extern char OSETT_NOTYPETAG_get();
 
   [global::System.Runtime.InteropServices.DllImport("libose", EntryPoint="CSharp_OSETTSTR_NOTYPETAG_get")]
   public static extern string OSETTSTR_NOTYPETAG_get();
@@ -312,6 +312,18 @@ class libosePINVOKE {
   [global::System.Runtime.InteropServices.DllImport("libose", EntryPoint="CSharp_OSETTSTR_ALIGNEDPTR_get")]
   public static extern string OSETTSTR_ALIGNEDPTR_get();
 
+  [global::System.Runtime.InteropServices.DllImport("libose", EntryPoint="CSharp_OSE_BUNDLE_ID__get")]
+  public static extern string OSE_BUNDLE_ID__get();
+
+  [global::System.Runtime.InteropServices.DllImport("libose", EntryPoint="CSharp_OSE_BUNDLE_ID_LEN__get")]
+  public static extern int OSE_BUNDLE_ID_LEN__get();
+
+  [global::System.Runtime.InteropServices.DllImport("libose", EntryPoint="CSharp_OSE_TIMETAG_NULL__get")]
+  public static extern string OSE_TIMETAG_NULL__get();
+
+  [global::System.Runtime.InteropServices.DllImport("libose", EntryPoint="CSharp_OSE_TIMETAG_LEN__get")]
+  public static extern int OSE_TIMETAG_LEN__get();
+
   [global::System.Runtime.InteropServices.DllImport("libose", EntryPoint="CSharp_OSE_BUNDLE_ID_get")]
   public static extern string OSE_BUNDLE_ID_get();
 
@@ -330,6 +342,9 @@ class libosePINVOKE {
   [global::System.Runtime.InteropServices.DllImport("libose", EntryPoint="CSharp_OSE_BUNDLE_HEADER_LEN_get")]
   public static extern int OSE_BUNDLE_HEADER_LEN_get();
 
+  [global::System.Runtime.InteropServices.DllImport("libose", EntryPoint="CSharp_OSE_EMPTY_TYPETAG_STRING__get")]
+  public static extern string OSE_EMPTY_TYPETAG_STRING__get();
+
   [global::System.Runtime.InteropServices.DllImport("libose", EntryPoint="CSharp_OSE_EMPTY_TYPETAG_STRING_get")]
   public static extern string OSE_EMPTY_TYPETAG_STRING_get();
 
@@ -338,6 +353,9 @@ class libosePINVOKE {
 
   [global::System.Runtime.InteropServices.DllImport("libose", EntryPoint="CSharp_OSE_EMPTY_TYPETAG_STRING_SIZE_get")]
   public static extern int OSE_EMPTY_TYPETAG_STRING_SIZE_get();
+
+  [global::System.Runtime.InteropServices.DllImport("libose", EntryPoint="CSharp_OSE_ADDRESS_ANONVAL__get")]
+  public static extern string OSE_ADDRESS_ANONVAL__get();
 
   [global::System.Runtime.InteropServices.DllImport("libose", EntryPoint="CSharp_OSE_ADDRESS_ANONVAL_get")]
   public static extern string OSE_ADDRESS_ANONVAL_get();
@@ -357,29 +375,41 @@ class libosePINVOKE {
   [global::System.Runtime.InteropServices.DllImport("libose", EntryPoint="CSharp_OSE_ADDRESS_MIN_PLEN_get")]
   public static extern int OSE_ADDRESS_MIN_PLEN_get();
 
+  [global::System.Runtime.InteropServices.DllImport("libose", EntryPoint="CSharp_OSE_PPRINTPAYLOADITEM_ADDR__get")]
+  public static extern string OSE_PPRINTPAYLOADITEM_ADDR__get();
+
   [global::System.Runtime.InteropServices.DllImport("libose", EntryPoint="CSharp_OSE_PPRINTPAYLOADITEM_ADDR_get")]
   public static extern string OSE_PPRINTPAYLOADITEM_ADDR_get();
+
+  [global::System.Runtime.InteropServices.DllImport("libose", EntryPoint="CSharp_OSE_PPRINTPAYLOADITEM_ADDR_LEN_get")]
+  public static extern int OSE_PPRINTPAYLOADITEM_ADDR_LEN_get();
+
+  [global::System.Runtime.InteropServices.DllImport("libose", EntryPoint="CSharp_OSE_GETPAYLOADITEMLENGTH_ADDR__get")]
+  public static extern string OSE_GETPAYLOADITEMLENGTH_ADDR__get();
 
   [global::System.Runtime.InteropServices.DllImport("libose", EntryPoint="CSharp_OSE_GETPAYLOADITEMLENGTH_ADDR_get")]
   public static extern string OSE_GETPAYLOADITEMLENGTH_ADDR_get();
 
+  [global::System.Runtime.InteropServices.DllImport("libose", EntryPoint="CSharp_OSE_GETPAYLOADITEMLENGTH_ADDR_LEN_get")]
+  public static extern int OSE_GETPAYLOADITEMLENGTH_ADDR_LEN_get();
+
+  [global::System.Runtime.InteropServices.DllImport("libose", EntryPoint="CSharp_OSE_GETPAYLOADITEMSIZE_ADDR__get")]
+  public static extern string OSE_GETPAYLOADITEMSIZE_ADDR__get();
+
   [global::System.Runtime.InteropServices.DllImport("libose", EntryPoint="CSharp_OSE_GETPAYLOADITEMSIZE_ADDR_get")]
   public static extern string OSE_GETPAYLOADITEMSIZE_ADDR_get();
 
-  [global::System.Runtime.InteropServices.DllImport("libose", EntryPoint="CSharp_OSE_VERSION_get")]
-  public static extern string OSE_VERSION_get();
+  [global::System.Runtime.InteropServices.DllImport("libose", EntryPoint="CSharp_OSE_GETPAYLOADITEMSIZE_ADDR_LEN_get")]
+  public static extern int OSE_GETPAYLOADITEMSIZE_ADDR_LEN_get();
 
-  [global::System.Runtime.InteropServices.DllImport("libose", EntryPoint="CSharp_OSE_DATE_COMPILED_get")]
-  public static extern string OSE_DATE_COMPILED_get();
+  [global::System.Runtime.InteropServices.DllImport("libose", EntryPoint="CSharp_ose_version_string")]
+  public static extern string ose_version_string();
 
-  [global::System.Runtime.InteropServices.DllImport("libose", EntryPoint="CSharp_ose_version_string_get")]
-  public static extern string ose_version_string_get();
+  [global::System.Runtime.InteropServices.DllImport("libose", EntryPoint="CSharp_ose_debug_string")]
+  public static extern string ose_debug_string();
 
-  [global::System.Runtime.InteropServices.DllImport("libose", EntryPoint="CSharp_ose_debug_string_get")]
-  public static extern string ose_debug_string_get();
-
-  [global::System.Runtime.InteropServices.DllImport("libose", EntryPoint="CSharp_ose_date_compiled_string_get")]
-  public static extern string ose_date_compiled_string_get();
+  [global::System.Runtime.InteropServices.DllImport("libose", EntryPoint="CSharp_ose_date_compiled_string")]
+  public static extern string ose_date_compiled_string();
 
   [global::System.Runtime.InteropServices.DllImport("libose", EntryPoint="CSharp_OSEVM_INPUT_SIZE_get")]
   public static extern int OSEVM_INPUT_SIZE_get();
@@ -395,6 +425,9 @@ class libosePINVOKE {
 
   [global::System.Runtime.InteropServices.DllImport("libose", EntryPoint="CSharp_OSEVM_DUMP_SIZE_get")]
   public static extern int OSEVM_DUMP_SIZE_get();
+
+  [global::System.Runtime.InteropServices.DllImport("libose", EntryPoint="CSharp_OSEVM_TOTAL_SIZE_get")]
+  public static extern int OSEVM_TOTAL_SIZE_get();
 
   [global::System.Runtime.InteropServices.DllImport("libose", EntryPoint="CSharp_osevm_hooks_ASSIGN_set")]
   public static extern void osevm_hooks_ASSIGN_set(global::System.Runtime.InteropServices.HandleRef jarg1, global::System.Runtime.InteropServices.HandleRef jarg2);
@@ -546,26 +579,14 @@ class libosePINVOKE {
   [global::System.Runtime.InteropServices.DllImport("libose", EntryPoint="CSharp_ose_context_get_status")]
   public static extern int ose_context_get_status(global::System.Runtime.InteropServices.HandleRef jarg1);
 
-  [global::System.Runtime.InteropServices.DllImport("libose", EntryPoint="CSharp_ose_get_memusage")]
-  public static extern int ose_get_memusage(global::System.Runtime.InteropServices.HandleRef jarg1);
-
-  [global::System.Runtime.InteropServices.DllImport("libose", EntryPoint="CSharp_ose_reset_memusage")]
-  public static extern void ose_reset_memusage(global::System.Runtime.InteropServices.HandleRef jarg1);
-
   [global::System.Runtime.InteropServices.DllImport("libose", EntryPoint="CSharp_OSE_CONTEXT_BUNDLE_OFFSET_get")]
   public static extern int OSE_CONTEXT_BUNDLE_OFFSET_get();
 
   [global::System.Runtime.InteropServices.DllImport("libose", EntryPoint="CSharp_ose_readSize")]
   public static extern int ose_readSize(global::System.Runtime.InteropServices.HandleRef jarg1);
 
-  [global::System.Runtime.InteropServices.DllImport("libose", EntryPoint="CSharp_OSE_CONTEXT_MESSAGE_OVERHEAD_get")]
-  public static extern int OSE_CONTEXT_MESSAGE_OVERHEAD_get();
-
   [global::System.Runtime.InteropServices.DllImport("libose", EntryPoint="CSharp_OSE_CONTEXT_STATUS_MESSAGE_SIZE_get")]
   public static extern int OSE_CONTEXT_STATUS_MESSAGE_SIZE_get();
-
-  [global::System.Runtime.InteropServices.DllImport("libose", EntryPoint="CSharp_OSE_CONTEXT_MAX_OVERHEAD_get")]
-  public static extern int OSE_CONTEXT_MAX_OVERHEAD_get();
 
   [global::System.Runtime.InteropServices.DllImport("libose", EntryPoint="CSharp_ose_init")]
   public static extern int ose_init(global::System.Runtime.InteropServices.HandleRef jarg1, int jarg2, string jarg3);
@@ -1287,153 +1308,6 @@ class libosePINVOKE {
   [global::System.Runtime.InteropServices.DllImport("libose", EntryPoint="CSharp_OSEVM_CACHE_SIZE_get")]
   public static extern int OSEVM_CACHE_SIZE_get();
 
-  [global::System.Runtime.InteropServices.DllImport("libose", EntryPoint="CSharp_OSEVM_CACHE_MSG_SIZE_get")]
-  public static extern int OSEVM_CACHE_MSG_SIZE_get();
-
-  [global::System.Runtime.InteropServices.DllImport("libose", EntryPoint="CSharp_OSEVM_CACHE_OFFSET_0_get")]
-  public static extern int OSEVM_CACHE_OFFSET_0_get();
-
-  [global::System.Runtime.InteropServices.DllImport("libose", EntryPoint="CSharp_OSEVM_CACHE_OFFSET_1_get")]
-  public static extern int OSEVM_CACHE_OFFSET_1_get();
-
-  [global::System.Runtime.InteropServices.DllImport("libose", EntryPoint="CSharp_OSEVM_CACHE_OFFSET_2_get")]
-  public static extern int OSEVM_CACHE_OFFSET_2_get();
-
-  [global::System.Runtime.InteropServices.DllImport("libose", EntryPoint="CSharp_OSEVM_CACHE_OFFSET_3_get")]
-  public static extern int OSEVM_CACHE_OFFSET_3_get();
-
-  [global::System.Runtime.InteropServices.DllImport("libose", EntryPoint="CSharp_OSEVM_CACHE_OFFSET_4_get")]
-  public static extern int OSEVM_CACHE_OFFSET_4_get();
-
-  [global::System.Runtime.InteropServices.DllImport("libose", EntryPoint="CSharp_OSEVM_CACHE_OFFSET_5_get")]
-  public static extern int OSEVM_CACHE_OFFSET_5_get();
-
-  [global::System.Runtime.InteropServices.DllImport("libose", EntryPoint="CSharp_OSEVM_CACHE_OFFSET_6_get")]
-  public static extern int OSEVM_CACHE_OFFSET_6_get();
-
-  [global::System.Runtime.InteropServices.DllImport("libose", EntryPoint="CSharp_OSEVM_CACHE_OFFSET_7_get")]
-  public static extern int OSEVM_CACHE_OFFSET_7_get();
-
-  [global::System.Runtime.InteropServices.DllImport("libose", EntryPoint="CSharp_OSEVM_CACHE_OFFSET_8_get")]
-  public static extern int OSEVM_CACHE_OFFSET_8_get();
-
-  [global::System.Runtime.InteropServices.DllImport("libose", EntryPoint="CSharp_OSEVM_CACHE_OFFSET_9_get")]
-  public static extern int OSEVM_CACHE_OFFSET_9_get();
-
-  [global::System.Runtime.InteropServices.DllImport("libose", EntryPoint="CSharp_OSEVM_CACHE_OFFSET_10_get")]
-  public static extern int OSEVM_CACHE_OFFSET_10_get();
-
-  [global::System.Runtime.InteropServices.DllImport("libose", EntryPoint="CSharp_OSEVM_CACHE_OFFSET_11_get")]
-  public static extern int OSEVM_CACHE_OFFSET_11_get();
-
-  [global::System.Runtime.InteropServices.DllImport("libose", EntryPoint="CSharp_OSEVM_CACHE_OFFSET_12_get")]
-  public static extern int OSEVM_CACHE_OFFSET_12_get();
-
-  [global::System.Runtime.InteropServices.DllImport("libose", EntryPoint="CSharp_OSEVM_CACHE_OFFSET_13_get")]
-  public static extern int OSEVM_CACHE_OFFSET_13_get();
-
-  [global::System.Runtime.InteropServices.DllImport("libose", EntryPoint="CSharp_OSEVM_CACHE_OFFSET_14_get")]
-  public static extern int OSEVM_CACHE_OFFSET_14_get();
-
-  [global::System.Runtime.InteropServices.DllImport("libose", EntryPoint="CSharp_OSEVM_CACHE_OFFSET_15_get")]
-  public static extern int OSEVM_CACHE_OFFSET_15_get();
-
-  [global::System.Runtime.InteropServices.DllImport("libose", EntryPoint="CSharp_OSEVM_CACHE_OFFSET_16_get")]
-  public static extern int OSEVM_CACHE_OFFSET_16_get();
-
-  [global::System.Runtime.InteropServices.DllImport("libose", EntryPoint="CSharp_OSEVM_CACHE_OFFSET_17_get")]
-  public static extern int OSEVM_CACHE_OFFSET_17_get();
-
-  [global::System.Runtime.InteropServices.DllImport("libose", EntryPoint="CSharp_OSEVM_CACHE_OFFSET_18_get")]
-  public static extern int OSEVM_CACHE_OFFSET_18_get();
-
-  [global::System.Runtime.InteropServices.DllImport("libose", EntryPoint="CSharp_OSEVM_CACHE_OFFSET_19_get")]
-  public static extern int OSEVM_CACHE_OFFSET_19_get();
-
-  [global::System.Runtime.InteropServices.DllImport("libose", EntryPoint="CSharp_OSEVM_CACHE_OFFSET_20_get")]
-  public static extern int OSEVM_CACHE_OFFSET_20_get();
-
-  [global::System.Runtime.InteropServices.DllImport("libose", EntryPoint="CSharp_OSEVM_CACHE_OFFSET_21_get")]
-  public static extern int OSEVM_CACHE_OFFSET_21_get();
-
-  [global::System.Runtime.InteropServices.DllImport("libose", EntryPoint="CSharp_OSEVM_CACHE_OFFSET_22_get")]
-  public static extern int OSEVM_CACHE_OFFSET_22_get();
-
-  [global::System.Runtime.InteropServices.DllImport("libose", EntryPoint="CSharp_OSEVM_CACHE_OFFSET_23_get")]
-  public static extern int OSEVM_CACHE_OFFSET_23_get();
-
-  [global::System.Runtime.InteropServices.DllImport("libose", EntryPoint="CSharp_OSEVM_CACHE_OFFSET_24_get")]
-  public static extern int OSEVM_CACHE_OFFSET_24_get();
-
-  [global::System.Runtime.InteropServices.DllImport("libose", EntryPoint="CSharp_OSEVM_CACHE_OFFSET_25_get")]
-  public static extern int OSEVM_CACHE_OFFSET_25_get();
-
-  [global::System.Runtime.InteropServices.DllImport("libose", EntryPoint="CSharp_OSEVM_CACHE_OFFSET_26_get")]
-  public static extern int OSEVM_CACHE_OFFSET_26_get();
-
-  [global::System.Runtime.InteropServices.DllImport("libose", EntryPoint="CSharp_OSEVM_CACHE_OFFSET_27_get")]
-  public static extern int OSEVM_CACHE_OFFSET_27_get();
-
-  [global::System.Runtime.InteropServices.DllImport("libose", EntryPoint="CSharp_OSEVM_CACHE_OFFSET_28_get")]
-  public static extern int OSEVM_CACHE_OFFSET_28_get();
-
-  [global::System.Runtime.InteropServices.DllImport("libose", EntryPoint="CSharp_OSEVM_CACHE_OFFSET_29_get")]
-  public static extern int OSEVM_CACHE_OFFSET_29_get();
-
-  [global::System.Runtime.InteropServices.DllImport("libose", EntryPoint="CSharp_OSEVM_CACHE_OFFSET_30_get")]
-  public static extern int OSEVM_CACHE_OFFSET_30_get();
-
-  [global::System.Runtime.InteropServices.DllImport("libose", EntryPoint="CSharp_OSEVM_CACHE_POINTER_get")]
-  public static extern int OSEVM_CACHE_POINTER_get();
-
-  [global::System.Runtime.InteropServices.DllImport("libose", EntryPoint="CSharp_OSEVM_CACHE_FLAGS_get")]
-  public static extern int OSEVM_CACHE_FLAGS_get();
-
-  [global::System.Runtime.InteropServices.DllImport("libose", EntryPoint="CSharp_OSEVM_CACHE_OFFSET_INPUT_get")]
-  public static extern int OSEVM_CACHE_OFFSET_INPUT_get();
-
-  [global::System.Runtime.InteropServices.DllImport("libose", EntryPoint="CSharp_OSEVM_CACHE_OFFSET_STACK_get")]
-  public static extern int OSEVM_CACHE_OFFSET_STACK_get();
-
-  [global::System.Runtime.InteropServices.DllImport("libose", EntryPoint="CSharp_OSEVM_CACHE_OFFSET_ENV_get")]
-  public static extern int OSEVM_CACHE_OFFSET_ENV_get();
-
-  [global::System.Runtime.InteropServices.DllImport("libose", EntryPoint="CSharp_OSEVM_CACHE_OFFSET_CONTROL_get")]
-  public static extern int OSEVM_CACHE_OFFSET_CONTROL_get();
-
-  [global::System.Runtime.InteropServices.DllImport("libose", EntryPoint="CSharp_OSEVM_CACHE_OFFSET_DUMP_get")]
-  public static extern int OSEVM_CACHE_OFFSET_DUMP_get();
-
-  [global::System.Runtime.InteropServices.DllImport("libose", EntryPoint="CSharp_OSEVM_INPUT_CONTEXT_MESSAGE_OFFSET_get")]
-  public static extern int OSEVM_INPUT_CONTEXT_MESSAGE_OFFSET_get();
-
-  [global::System.Runtime.InteropServices.DllImport("libose", EntryPoint="CSharp_OSEVM_INPUT_BUNDLE_OFFSET_get")]
-  public static extern int OSEVM_INPUT_BUNDLE_OFFSET_get();
-
-  [global::System.Runtime.InteropServices.DllImport("libose", EntryPoint="CSharp_OSEVM_STACK_CONTEXT_MESSAGE_OFFSET_get")]
-  public static extern int OSEVM_STACK_CONTEXT_MESSAGE_OFFSET_get();
-
-  [global::System.Runtime.InteropServices.DllImport("libose", EntryPoint="CSharp_OSEVM_STACK_BUNDLE_OFFSET_get")]
-  public static extern int OSEVM_STACK_BUNDLE_OFFSET_get();
-
-  [global::System.Runtime.InteropServices.DllImport("libose", EntryPoint="CSharp_OSEVM_ENV_CONTEXT_MESSAGE_OFFSET_get")]
-  public static extern int OSEVM_ENV_CONTEXT_MESSAGE_OFFSET_get();
-
-  [global::System.Runtime.InteropServices.DllImport("libose", EntryPoint="CSharp_OSEVM_ENV_BUNDLE_OFFSET_get")]
-  public static extern int OSEVM_ENV_BUNDLE_OFFSET_get();
-
-  [global::System.Runtime.InteropServices.DllImport("libose", EntryPoint="CSharp_OSEVM_CONTROL_CONTEXT_MESSAGE_OFFSET_get")]
-  public static extern int OSEVM_CONTROL_CONTEXT_MESSAGE_OFFSET_get();
-
-  [global::System.Runtime.InteropServices.DllImport("libose", EntryPoint="CSharp_OSEVM_CONTROL_BUNDLE_OFFSET_get")]
-  public static extern int OSEVM_CONTROL_BUNDLE_OFFSET_get();
-
-  [global::System.Runtime.InteropServices.DllImport("libose", EntryPoint="CSharp_OSEVM_DUMP_CONTEXT_MESSAGE_OFFSET_get")]
-  public static extern int OSEVM_DUMP_CONTEXT_MESSAGE_OFFSET_get();
-
-  [global::System.Runtime.InteropServices.DllImport("libose", EntryPoint="CSharp_OSEVM_DUMP_BUNDLE_OFFSET_get")]
-  public static extern int OSEVM_DUMP_BUNDLE_OFFSET_get();
-
   [global::System.Runtime.InteropServices.DllImport("libose", EntryPoint="CSharp_osevm_init")]
   public static extern global::System.IntPtr osevm_init(global::System.Runtime.InteropServices.HandleRef jarg1);
 
@@ -1658,6 +1532,9 @@ class libosePINVOKE {
 
   [global::System.Runtime.InteropServices.DllImport("libose", EntryPoint="CSharp_OSEBase_getself")]
   public static extern global::System.IntPtr OSEBase_getself(global::System.Runtime.InteropServices.HandleRef jarg1);
+
+  [global::System.Runtime.InteropServices.DllImport("libose", EntryPoint="CSharp_OSEBase_x")]
+  public static extern global::System.IntPtr OSEBase_x(global::System.Runtime.InteropServices.HandleRef jarg1);
 
   [global::System.Runtime.InteropServices.DllImport("libose", EntryPoint="CSharp_OSEBase_getfnptr")]
   public static extern global::System.IntPtr OSEBase_getfnptr(global::System.Runtime.InteropServices.HandleRef jarg1, string jarg2);
