@@ -1537,11 +1537,6 @@ public class libose {
     return ret;
   }
 
-  public static void ose_base_lookup(ose_bundle osevm) {
-    libosePINVOKE.ose_base_lookup(ose_bundle.getCPtr(osevm));
-    if (libosePINVOKE.SWIGPendingException.Pending) throw libosePINVOKE.SWIGPendingException.Retrieve();
-  }
-
   public static void osevm_respondToString(ose_bundle osevm) {
     libosePINVOKE.osevm_respondToString(ose_bundle.getCPtr(osevm));
     if (libosePINVOKE.SWIGPendingException.Pending) throw libosePINVOKE.SWIGPendingException.Retrieve();
@@ -1777,16 +1772,6 @@ public class libose {
     if (libosePINVOKE.SWIGPendingException.Pending) throw libosePINVOKE.SWIGPendingException.Retrieve();
   }
 
-  public static void pbndl(ose_bundle bundle, string str) {
-    libosePINVOKE.pbndl(ose_bundle.getCPtr(bundle), str);
-    if (libosePINVOKE.SWIGPendingException.Pending) throw libosePINVOKE.SWIGPendingException.Retrieve();
-  }
-
-  public static void pbytes(ose_bundle bundle, int start, int end) {
-    libosePINVOKE.pbytes(ose_bundle.getCPtr(bundle), start, end);
-    if (libosePINVOKE.SWIGPendingException.Pending) throw libosePINVOKE.SWIGPendingException.Retrieve();
-  }
-
   public static SWIGTYPE_p_void getself(ose_bundle osevm) {
     global::System.IntPtr cPtr = libosePINVOKE.getself(ose_bundle.getCPtr(osevm));
     SWIGTYPE_p_void ret = (cPtr == global::System.IntPtr.Zero) ? null : new SWIGTYPE_p_void(cPtr, false);
@@ -1854,6 +1839,20 @@ public class libose {
   public static readonly string OSEVM_ADDR_STDLIB = libosePINVOKE.OSEVM_ADDR_STDLIB_get();
   public static readonly string OSEVM_ADDR_HOST = libosePINVOKE.OSEVM_ADDR_HOST_get();
   public static readonly string OSEVM_ADDR_CACHE = libosePINVOKE.OSEVM_ADDR_CACHE_get();
+  public static readonly string OSEVM_ADDR_assign = libosePINVOKE.OSEVM_ADDR_assign_get();
+  public static readonly string OSEVM_ADDR_quote = libosePINVOKE.OSEVM_ADDR_quote_get();
+  public static readonly string OSEVM_ADDR_funcall = libosePINVOKE.OSEVM_ADDR_funcall_get();
+  public static readonly string OSEVM_ADDR_lookup = libosePINVOKE.OSEVM_ADDR_lookup_get();
+  public static readonly string OSEVM_ADDR_copyRegisterToElem = libosePINVOKE.OSEVM_ADDR_copyRegisterToElem_get();
+  public static readonly string OSEVM_ADDR_appendElemToRegister = libosePINVOKE.OSEVM_ADDR_appendElemToRegister_get();
+  public static readonly string OSEVM_ADDR_replaceRegisterWithElem = libosePINVOKE.OSEVM_ADDR_replaceRegisterWithElem_get();
+  public static readonly string OSEVM_ADDR_moveElemToRegister = libosePINVOKE.OSEVM_ADDR_moveElemToRegister_get();
+  public static readonly string OSEVM_ADDR_toType = libosePINVOKE.OSEVM_ADDR_toType_get();
+  public static readonly string OSEVM_ADDR_toInt32 = libosePINVOKE.OSEVM_ADDR_toInt32_get();
+  public static readonly string OSEVM_ADDR_toFloat = libosePINVOKE.OSEVM_ADDR_toFloat_get();
+  public static readonly string OSEVM_ADDR_toString = libosePINVOKE.OSEVM_ADDR_toString_get();
+  public static readonly string OSEVM_ADDR_toBlob = libosePINVOKE.OSEVM_ADDR_toBlob_get();
+  public static readonly string OSEVM_ADDR_appendByte = libosePINVOKE.OSEVM_ADDR_appendByte_get();
   public static readonly int OSEVM_CACHE_SIZE = libosePINVOKE.OSEVM_CACHE_SIZE_get();
   public static readonly string OSEVM_EVALTYPE_ADDR = libosePINVOKE.OSEVM_EVALTYPE_ADDR_get();
 }

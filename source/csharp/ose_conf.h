@@ -7,4 +7,4 @@
 #define OSE_CONF_VM_CONTROL_SIZE 1048576
 #define OSE_CONF_VM_DUMP_SIZE 1048576
 
-#define OSEVM_LOOKUP ose_base_lookup
+#define OSEVM_LOOKUP osesdk_lookup

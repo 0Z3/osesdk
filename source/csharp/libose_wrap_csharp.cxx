@@ -5712,6 +5712,146 @@ SWIGEXPORT char * SWIGSTDCALL CSharp_OSEVM_ADDR_CACHE_get() {
 }
 
 
+SWIGEXPORT char * SWIGSTDCALL CSharp_OSEVM_ADDR_assign_get() {
+  char * jresult ;
+  char *result = 0 ;
+  
+  result = (char *)("/@");
+  jresult = SWIG_csharp_string_callback((const char *)result); 
+  return jresult;
+}
+
+
+SWIGEXPORT char * SWIGSTDCALL CSharp_OSEVM_ADDR_quote_get() {
+  char * jresult ;
+  char *result = 0 ;
+  
+  result = (char *)("/\'");
+  jresult = SWIG_csharp_string_callback((const char *)result); 
+  return jresult;
+}
+
+
+SWIGEXPORT char * SWIGSTDCALL CSharp_OSEVM_ADDR_funcall_get() {
+  char * jresult ;
+  char *result = 0 ;
+  
+  result = (char *)("/!");
+  jresult = SWIG_csharp_string_callback((const char *)result); 
+  return jresult;
+}
+
+
+SWIGEXPORT char * SWIGSTDCALL CSharp_OSEVM_ADDR_lookup_get() {
+  char * jresult ;
+  char *result = 0 ;
+  
+  result = (char *)("/$");
+  jresult = SWIG_csharp_string_callback((const char *)result); 
+  return jresult;
+}
+
+
+SWIGEXPORT char * SWIGSTDCALL CSharp_OSEVM_ADDR_copyRegisterToElem_get() {
+  char * jresult ;
+  char *result = 0 ;
+  
+  result = (char *)("/>");
+  jresult = SWIG_csharp_string_callback((const char *)result); 
+  return jresult;
+}
+
+
+SWIGEXPORT char * SWIGSTDCALL CSharp_OSEVM_ADDR_appendElemToRegister_get() {
+  char * jresult ;
+  char *result = 0 ;
+  
+  result = (char *)("/<<");
+  jresult = SWIG_csharp_string_callback((const char *)result); 
+  return jresult;
+}
+
+
+SWIGEXPORT char * SWIGSTDCALL CSharp_OSEVM_ADDR_replaceRegisterWithElem_get() {
+  char * jresult ;
+  char *result = 0 ;
+  
+  result = (char *)("/<");
+  jresult = SWIG_csharp_string_callback((const char *)result); 
+  return jresult;
+}
+
+
+SWIGEXPORT char * SWIGSTDCALL CSharp_OSEVM_ADDR_moveElemToRegister_get() {
+  char * jresult ;
+  char *result = 0 ;
+  
+  result = (char *)("/-");
+  jresult = SWIG_csharp_string_callback((const char *)result); 
+  return jresult;
+}
+
+
+SWIGEXPORT char * SWIGSTDCALL CSharp_OSEVM_ADDR_toType_get() {
+  char * jresult ;
+  char *result = 0 ;
+  
+  result = (char *)("/,");
+  jresult = SWIG_csharp_string_callback((const char *)result); 
+  return jresult;
+}
+
+
+SWIGEXPORT char * SWIGSTDCALL CSharp_OSEVM_ADDR_toInt32_get() {
+  char * jresult ;
+  char *result = 0 ;
+  
+  result = (char *)("/,/i");
+  jresult = SWIG_csharp_string_callback((const char *)result); 
+  return jresult;
+}
+
+
+SWIGEXPORT char * SWIGSTDCALL CSharp_OSEVM_ADDR_toFloat_get() {
+  char * jresult ;
+  char *result = 0 ;
+  
+  result = (char *)("/,/f");
+  jresult = SWIG_csharp_string_callback((const char *)result); 
+  return jresult;
+}
+
+
+SWIGEXPORT char * SWIGSTDCALL CSharp_OSEVM_ADDR_toString_get() {
+  char * jresult ;
+  char *result = 0 ;
+  
+  result = (char *)("/,/s");
+  jresult = SWIG_csharp_string_callback((const char *)result); 
+  return jresult;
+}
+
+
+SWIGEXPORT char * SWIGSTDCALL CSharp_OSEVM_ADDR_toBlob_get() {
+  char * jresult ;
+  char *result = 0 ;
+  
+  result = (char *)("/,/b");
+  jresult = SWIG_csharp_string_callback((const char *)result); 
+  return jresult;
+}
+
+
+SWIGEXPORT char * SWIGSTDCALL CSharp_OSEVM_ADDR_appendByte_get() {
+  char * jresult ;
+  char *result = 0 ;
+  
+  result = (char *)("/&");
+  jresult = SWIG_csharp_string_callback((const char *)result); 
+  return jresult;
+}
+
+
 SWIGEXPORT int SWIGSTDCALL CSharp_OSEVM_CACHE_SIZE_get() {
   int jresult ;
   int result;
@@ -5737,20 +5877,6 @@ SWIGEXPORT void * SWIGSTDCALL CSharp_osevm_init(void * jarg1) {
   result = osevm_init(SWIG_STD_MOVE(arg1));
   jresult = new ose_bundle(result); 
   return jresult;
-}
-
-
-SWIGEXPORT void SWIGSTDCALL CSharp_ose_base_lookup(void * jarg1) {
-  ose_bundle arg1 ;
-  ose_bundle *argp1 ;
-  
-  argp1 = (ose_bundle *)jarg1; 
-  if (!argp1) {
-    SWIG_CSharpSetPendingExceptionArgument(SWIG_CSharpArgumentNullException, "Attempt to dereference null ose_bundle", 0);
-    return ;
-  }
-  arg1 = *argp1; 
-  ose_base_lookup(SWIG_STD_MOVE(arg1));
 }
 
 
@@ -6477,40 +6603,6 @@ SWIGEXPORT void SWIGSTDCALL CSharp_osevm_appendByte(void * jarg1) {
 }
 
 
-SWIGEXPORT void SWIGSTDCALL CSharp_pbndl(void * jarg1, char * jarg2) {
-  ose_bundle arg1 ;
-  char *arg2 = (char *) (char *)0 ;
-  ose_bundle *argp1 ;
-  
-  argp1 = (ose_bundle *)jarg1; 
-  if (!argp1) {
-    SWIG_CSharpSetPendingExceptionArgument(SWIG_CSharpArgumentNullException, "Attempt to dereference null ose_bundle", 0);
-    return ;
-  }
-  arg1 = *argp1; 
-  arg2 = (char *)jarg2; 
-  pbndl(SWIG_STD_MOVE(arg1),(char const *)arg2);
-}
-
-
-SWIGEXPORT void SWIGSTDCALL CSharp_pbytes(void * jarg1, int jarg2, int jarg3) {
-  ose_bundle arg1 ;
-  int32_t arg2 ;
-  int32_t arg3 ;
-  ose_bundle *argp1 ;
-  
-  argp1 = (ose_bundle *)jarg1; 
-  if (!argp1) {
-    SWIG_CSharpSetPendingExceptionArgument(SWIG_CSharpArgumentNullException, "Attempt to dereference null ose_bundle", 0);
-    return ;
-  }
-  arg1 = *argp1; 
-  arg2 = (int32_t)jarg2; 
-  arg3 = (int32_t)jarg3; 
-  pbytes(SWIG_STD_MOVE(arg1),arg2,arg3);
-}
-
-
 SWIGEXPORT void * SWIGSTDCALL CSharp_getself(void * jarg1) {
   void * jresult ;
   ose_bundle arg1 ;
@@ -6786,18 +6878,6 @@ SWIGEXPORT void * SWIGSTDCALL CSharp_OSEBase_getself(void * jarg1) {
   
   arg1 = (OSEBase *)jarg1; 
   result = (void *)(arg1)->getself();
-  jresult = (void *)result; 
-  return jresult;
-}
-
-
-SWIGEXPORT void * SWIGSTDCALL CSharp_OSEBase_x(void * jarg1) {
-  void * jresult ;
-  OSEBase *arg1 = (OSEBase *) 0 ;
-  void *result = 0 ;
-  
-  arg1 = (OSEBase *)jarg1; 
-  result = (void *)(arg1)->x();
   jresult = (void *)result; 
   return jresult;
 }

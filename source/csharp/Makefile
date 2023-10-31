@@ -60,7 +60,7 @@ DYNAMIC_TARGET_CMD=$(CC) $(LDFLAGS) $(OFILES) -shared -o $(DYNAMIC_TARGET)
 .PHONY: all csharp
 all: csharp
 
-INCLUDES=-I. -I$(COMMONDIR) -I$(LIBOSEDIR)
+INCLUDES=-I. -I$(COMMONDIR) -I$(LIBOSEDIR) -I$(LIBOSEDIR)/..
 
 ifneq ($(OS),Windows_NT)
 CFLAGS:=-fPIC
