@@ -1,3 +1,6 @@
 [submodule "source/libose"]
 	path = source/libose
 	url = https://github.com/0Z3/libose
+[submodule "source/thirdparty/rax"]
+	path = source/thirdparty/rax
+	url = https://github.com/0Z3/rax
