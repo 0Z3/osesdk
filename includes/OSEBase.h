@@ -6,19 +6,19 @@
 #include "ose_stackops.h"
 #include "ose_vm.h"
 
-#include "ose_lookup.h"
+#include "osesdk_lookup.h"
 
 #define OSE_WRAPPER_DECL(name)                      \
     extern "C"                                      \
     void ose_##name ##_wrapper(ose_bundle osevm);
 
-#define OSE_WRAPPER_DEFN(name)                            \
+#define OSE_WRAPPER_DEFN(name)                              \
     extern "C"                                              \
     void ose_##name ##_wrapper(ose_bundle osevm)            \
     {                                                       \
         std::cout << __func__ << ":" << __LINE__ << "\n";   \
         std::cout << "*****\n";                             \
-        THISCLASS *base = (THISCLASS *)getself(osevm);          \
+        THISCLASS *base = (THISCLASS *)getself(osevm);      \
         base->ose_##name(osevm);                            \
         std::cout << "*****\n";                             \
     }
@@ -31,17 +31,17 @@
 #define OSE_WRAPPER_TAB_TYPE_(cls) OSE_WRAPPER_TAB_TYPE__(cls)
 #define OSE_WRAPPER_TAB_TYPE OSE_WRAPPER_TAB_TYPE_(THISCLASS)
 
-#define OSE_WRAPPER_TAB_DEFN__(cls, ...)     \
-    struct _##cls ##_wrappertab             \
+#define OSE_WRAPPER_TAB_DEFN__(cls, ...)        \
+    struct _##cls ##_wrappertab                 \
     {                                           \
-        const char * const name;                \
-        void *fn;                               \
-    } cls ##_wrappertab [] =               \
+        const char * const name = NULL;         \
+        void *fn = NULL;                        \
+    } cls ##_wrappertab [] =                    \
     {                                           \
         __VA_ARGS__                             \
     };
 
-#define OSE_WRAPPER_TAB_DEFN_(cls, ...)                   \
+#define OSE_WRAPPER_TAB_DEFN_(cls, ...)         \
     OSE_WRAPPER_TAB_DEFN__(cls, __VA_ARGS__)
 #define OSE_WRAPPER_TAB_DEFN(...) OSE_WRAPPER_TAB_DEFN_(THISCLASS, __VA_ARGS__)
 
@@ -49,8 +49,8 @@
 #define OSE_WRAPPER_BIND(name)                      \
     { "/" #name , (void *)ose_ ##name ##_wrapper }
 
-#define OSE_WRAPPER_TAB_LENGTH_(cls)             \
-    sizeof(OSE_WRAPPER_TAB)                \
+#define OSE_WRAPPER_TAB_LENGTH_(cls)            \
+    sizeof(OSE_WRAPPER_TAB)                     \
     / sizeof(OSE_WRAPPER_TAB_TYPE)
 #define OSE_WRAPPER_TAB_LENGTH OSE_WRAPPER_TAB_LENGTH_(THISCLASS)
 

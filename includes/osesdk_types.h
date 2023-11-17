@@ -1,7 +1,6 @@
 #ifndef OSESDK_TYPES
 #define OSESDK_TYPES
 
-#include "ose_conf.h"
 #include "libose/ose.h"
 
 #ifdef __cplusplus

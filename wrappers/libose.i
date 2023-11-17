@@ -15,7 +15,6 @@
 
 %{
     #include <iostream>
-    #include "ose_conf.h"
     #include "ose.h"
     #include "ose_assert.h"
     #include "ose_context.h"
@@ -41,7 +40,6 @@
 /* %rename("%(strip:[ose_])s", regexmatch$name="^ose_[a-zA-Z]") ""; */
 /* %rename("%(regex:/^ose_2(\\w+)/two\\1/)s") ""; */
 
-%include "ose_conf.h"
 %include "ose.h"
 %include "ose_assert.h"
 %include "ose_context.h"

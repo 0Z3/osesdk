@@ -199,6 +199,28 @@ public class osevm_hooks : global::System.IDisposable {
     } 
   }
 
+  public SWIGTYPE_p_f_ose_bundle__void TODOUBLE {
+    set {
+      libosePINVOKE.osevm_hooks_TODOUBLE_set(swigCPtr, SWIGTYPE_p_f_ose_bundle__void.getCPtr(value));
+    } 
+    get {
+      global::System.IntPtr cPtr = libosePINVOKE.osevm_hooks_TODOUBLE_get(swigCPtr);
+      SWIGTYPE_p_f_ose_bundle__void ret = (cPtr == global::System.IntPtr.Zero) ? null : new SWIGTYPE_p_f_ose_bundle__void(cPtr, false);
+      return ret;
+    } 
+  }
+
+  public SWIGTYPE_p_f_ose_bundle__void TOTIMETAG {
+    set {
+      libosePINVOKE.osevm_hooks_TOTIMETAG_set(swigCPtr, SWIGTYPE_p_f_ose_bundle__void.getCPtr(value));
+    } 
+    get {
+      global::System.IntPtr cPtr = libosePINVOKE.osevm_hooks_TOTIMETAG_get(swigCPtr);
+      SWIGTYPE_p_f_ose_bundle__void ret = (cPtr == global::System.IntPtr.Zero) ? null : new SWIGTYPE_p_f_ose_bundle__void(cPtr, false);
+      return ret;
+    } 
+  }
+
   public SWIGTYPE_p_f_ose_bundle__void APPENDBYTE {
     set {
       libosePINVOKE.osevm_hooks_APPENDBYTE_set(swigCPtr, SWIGTYPE_p_f_ose_bundle__void.getCPtr(value));
