@@ -1,7 +1,6 @@
 #ifndef OSESDK_RAX_H
 #define OSESDK_RAX_H
 
-#include "ose_conf.h"
 #include "ose.h"
 
 #ifdef __cplusplus

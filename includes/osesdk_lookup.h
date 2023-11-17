@@ -1,7 +1,6 @@
 #ifndef OSESDK_LOOKUP
 #define OSESDK_LOOKUP
 
-#include "ose_conf.h"
 #include "libose/ose.h"
 
 #ifdef __cplusplus

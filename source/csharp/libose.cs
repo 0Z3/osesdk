@@ -95,6 +95,34 @@ public class libose {
     } 
   }
 
+  public static char OSETT_DOUBLE {
+    get {
+      char ret = libosePINVOKE.OSETT_DOUBLE_get();
+      return ret;
+    } 
+  }
+
+  public static string OSETTSTR_DOUBLE {
+    get {
+      string ret = libosePINVOKE.OSETTSTR_DOUBLE_get();
+      return ret;
+    } 
+  }
+
+  public static char OSETT_TIMETAG {
+    get {
+      char ret = libosePINVOKE.OSETT_TIMETAG_get();
+      return ret;
+    } 
+  }
+
+  public static string OSETTSTR_TIMETAG {
+    get {
+      string ret = libosePINVOKE.OSETTSTR_TIMETAG_get();
+      return ret;
+    } 
+  }
+
   public static char OSETT_TRUE {
     get {
       char ret = libosePINVOKE.OSETT_TRUE_get();
@@ -298,6 +326,12 @@ public class libose {
     } 
   }
 
+  public static int osevm_pprintPayloadItem_hook(ose_bundle bundle, char typetag, int msg_offset, int item_offset) {
+    int ret = libosePINVOKE.osevm_pprintPayloadItem_hook__SWIG_0(ose_bundle.getCPtr(bundle), typetag, msg_offset, item_offset);
+    if (libosePINVOKE.SWIGPendingException.Pending) throw libosePINVOKE.SWIGPendingException.Retrieve();
+    return ret;
+  }
+
   public static string OSE_GETPAYLOADITEMLENGTH_ADDR {
     get {
       string ret = libosePINVOKE.OSE_GETPAYLOADITEMLENGTH_ADDR_get();
@@ -312,6 +346,12 @@ public class libose {
     } 
   }
 
+  public static int osevm_getPayloadItemLength_hook(ose_bundle bundle, char typetag, int msg_offset, int item_offset) {
+    int ret = libosePINVOKE.osevm_getPayloadItemLength_hook__SWIG_0(ose_bundle.getCPtr(bundle), typetag, msg_offset, item_offset);
+    if (libosePINVOKE.SWIGPendingException.Pending) throw libosePINVOKE.SWIGPendingException.Retrieve();
+    return ret;
+  }
+
   public static string OSE_GETPAYLOADITEMSIZE_ADDR {
     get {
       string ret = libosePINVOKE.OSE_GETPAYLOADITEMSIZE_ADDR_get();
@@ -324,6 +364,12 @@ public class libose {
       int ret = libosePINVOKE.OSE_GETPAYLOADITEMSIZE_ADDR_LEN_get();
       return ret;
     } 
+  }
+
+  public static int osevm_getPayloadItemSize_hook(ose_bundle bundle, char typetag, int msg_offset, int item_offset) {
+    int ret = libosePINVOKE.osevm_getPayloadItemSize_hook__SWIG_0(ose_bundle.getCPtr(bundle), typetag, msg_offset, item_offset);
+    if (libosePINVOKE.SWIGPendingException.Pending) throw libosePINVOKE.SWIGPendingException.Retrieve();
+    return ret;
   }
 
   public static string ose_version_string() {
@@ -341,48 +387,6 @@ public class libose {
     return ret;
   }
 
-  public static int OSEVM_INPUT_SIZE {
-    get {
-      int ret = libosePINVOKE.OSEVM_INPUT_SIZE_get();
-      return ret;
-    } 
-  }
-
-  public static int OSEVM_STACK_SIZE {
-    get {
-      int ret = libosePINVOKE.OSEVM_STACK_SIZE_get();
-      return ret;
-    } 
-  }
-
-  public static int OSEVM_ENV_SIZE {
-    get {
-      int ret = libosePINVOKE.OSEVM_ENV_SIZE_get();
-      return ret;
-    } 
-  }
-
-  public static int OSEVM_CONTROL_SIZE {
-    get {
-      int ret = libosePINVOKE.OSEVM_CONTROL_SIZE_get();
-      return ret;
-    } 
-  }
-
-  public static int OSEVM_DUMP_SIZE {
-    get {
-      int ret = libosePINVOKE.OSEVM_DUMP_SIZE_get();
-      return ret;
-    } 
-  }
-
-  public static int OSEVM_TOTAL_SIZE {
-    get {
-      int ret = libosePINVOKE.OSEVM_TOTAL_SIZE_get();
-      return ret;
-    } 
-  }
-
   public static void ose_context_set_status(ose_bundle b, int s) {
     libosePINVOKE.ose_context_set_status(ose_bundle.getCPtr(b), s);
     if (libosePINVOKE.SWIGPendingException.Pending) throw libosePINVOKE.SWIGPendingException.Retrieve();
@@ -390,6 +394,33 @@ public class libose {
 
   public static int ose_context_get_status(ose_bundle b) {
     int ret = libosePINVOKE.ose_context_get_status(ose_bundle.getCPtr(b));
+    if (libosePINVOKE.SWIGPendingException.Pending) throw libosePINVOKE.SWIGPendingException.Retrieve();
+    return ret;
+  }
+
+  public static void ose_context_set_changed(ose_bundle b) {
+    libosePINVOKE.ose_context_set_changed(ose_bundle.getCPtr(b));
+    if (libosePINVOKE.SWIGPendingException.Pending) throw libosePINVOKE.SWIGPendingException.Retrieve();
+  }
+
+  public static void ose_context_reset_changed(ose_bundle b) {
+    libosePINVOKE.ose_context_reset_changed(ose_bundle.getCPtr(b));
+    if (libosePINVOKE.SWIGPendingException.Pending) throw libosePINVOKE.SWIGPendingException.Retrieve();
+  }
+
+  public static int ose_context_get_changed(ose_bundle b) {
+    int ret = libosePINVOKE.ose_context_get_changed(ose_bundle.getCPtr(b));
+    if (libosePINVOKE.SWIGPendingException.Pending) throw libosePINVOKE.SWIGPendingException.Retrieve();
+    return ret;
+  }
+
+  public static void ose_context_set_cachefns(ose_bundle B, SWIGTYPE_p_f_ose_bundle_q_const__p_q_const__char_p_p_void__int getFirstOffsetForMatch, SWIGTYPE_p_void userdata) {
+    libosePINVOKE.ose_context_set_cachefns(ose_bundle.getCPtr(B), SWIGTYPE_p_f_ose_bundle_q_const__p_q_const__char_p_p_void__int.getCPtr(getFirstOffsetForMatch), SWIGTYPE_p_void.getCPtr(userdata));
+    if (libosePINVOKE.SWIGPendingException.Pending) throw libosePINVOKE.SWIGPendingException.Retrieve();
+  }
+
+  public static int ose_context_getFirstOffsetForMatch(ose_bundle B, string address) {
+    int ret = libosePINVOKE.ose_context_getFirstOffsetForMatch(ose_bundle.getCPtr(B), address);
     if (libosePINVOKE.SWIGPendingException.Pending) throw libosePINVOKE.SWIGPendingException.Retrieve();
     return ret;
   }
@@ -541,6 +572,16 @@ public class libose {
     if (libosePINVOKE.SWIGPendingException.Pending) throw libosePINVOKE.SWIGPendingException.Retrieve();
   }
 
+  public static void ose_pushDouble(ose_bundle B, double v) {
+    libosePINVOKE.ose_pushDouble(ose_bundle.getCPtr(B), v);
+    if (libosePINVOKE.SWIGPendingException.Pending) throw libosePINVOKE.SWIGPendingException.Retrieve();
+  }
+
+  public static void ose_pushTimetag(ose_bundle B, uint sec, uint fsec) {
+    libosePINVOKE.ose_pushTimetag(ose_bundle.getCPtr(B), sec, fsec);
+    if (libosePINVOKE.SWIGPendingException.Pending) throw libosePINVOKE.SWIGPendingException.Retrieve();
+  }
+
   public static void ose_pushAlignedPtr(ose_bundle B, SWIGTYPE_p_void v) {
     libosePINVOKE.ose_pushAlignedPtr(ose_bundle.getCPtr(B), SWIGTYPE_p_void.getCPtr(v));
     if (libosePINVOKE.SWIGPendingException.Pending) throw libosePINVOKE.SWIGPendingException.Retrieve();
@@ -548,6 +589,12 @@ public class libose {
 
   public static string ose_peekAddress(ose_bundle B) {
     string ret = libosePINVOKE.ose_peekAddress(ose_bundle.getCPtr(B));
+    if (libosePINVOKE.SWIGPendingException.Pending) throw libosePINVOKE.SWIGPendingException.Retrieve();
+    return ret;
+  }
+
+  public static char ose_peekMessageArgTypeAtOffset(ose_bundle B, int messageoffset) {
+    char ret = libosePINVOKE.ose_peekMessageArgTypeAtOffset(ose_bundle.getCPtr(B), messageoffset);
     if (libosePINVOKE.SWIGPendingException.Pending) throw libosePINVOKE.SWIGPendingException.Retrieve();
     return ret;
   }
@@ -588,6 +635,18 @@ public class libose {
     return ret;
   }
 
+  public static double ose_peekDouble(ose_bundle B) {
+    double ret = libosePINVOKE.ose_peekDouble(ose_bundle.getCPtr(B));
+    if (libosePINVOKE.SWIGPendingException.Pending) throw libosePINVOKE.SWIGPendingException.Retrieve();
+    return ret;
+  }
+
+  public static ose_timetag ose_peekTimetag(ose_bundle B) {
+    ose_timetag ret = new ose_timetag(libosePINVOKE.ose_peekTimetag(ose_bundle.getCPtr(B)), true);
+    if (libosePINVOKE.SWIGPendingException.Pending) throw libosePINVOKE.SWIGPendingException.Retrieve();
+    return ret;
+  }
+
   public static SWIGTYPE_p_void ose_peekAlignedPtr(ose_bundle B) {
     global::System.IntPtr cPtr = libosePINVOKE.ose_peekAlignedPtr(ose_bundle.getCPtr(B));
     SWIGTYPE_p_void ret = (cPtr == global::System.IntPtr.Zero) ? null : new SWIGTYPE_p_void(cPtr, false);
@@ -615,6 +674,18 @@ public class libose {
 
   public static int ose_popBlob(ose_bundle B, string buf) {
     int ret = libosePINVOKE.ose_popBlob(ose_bundle.getCPtr(B), buf);
+    if (libosePINVOKE.SWIGPendingException.Pending) throw libosePINVOKE.SWIGPendingException.Retrieve();
+    return ret;
+  }
+
+  public static double ose_popDouble(ose_bundle B) {
+    double ret = libosePINVOKE.ose_popDouble(ose_bundle.getCPtr(B));
+    if (libosePINVOKE.SWIGPendingException.Pending) throw libosePINVOKE.SWIGPendingException.Retrieve();
+    return ret;
+  }
+
+  public static ose_timetag ose_popTimetag(ose_bundle B) {
+    ose_timetag ret = new ose_timetag(libosePINVOKE.ose_popTimetag(ose_bundle.getCPtr(B)), true);
     if (libosePINVOKE.SWIGPendingException.Pending) throw libosePINVOKE.SWIGPendingException.Retrieve();
     return ret;
   }
@@ -758,6 +829,11 @@ public class libose {
     if (libosePINVOKE.SWIGPendingException.Pending) throw libosePINVOKE.SWIGPendingException.Retrieve();
   }
 
+  public static void ose_popAtOffset(ose_bundle B, int o) {
+    libosePINVOKE.ose_popAtOffset(ose_bundle.getCPtr(B), o);
+    if (libosePINVOKE.SWIGPendingException.Pending) throw libosePINVOKE.SWIGPendingException.Retrieve();
+  }
+
   public static void ose_pop(ose_bundle B) {
     libosePINVOKE.ose_pop(ose_bundle.getCPtr(B));
     if (libosePINVOKE.SWIGPendingException.Pending) throw libosePINVOKE.SWIGPendingException.Retrieve();
@@ -898,6 +974,11 @@ public class libose {
     if (libosePINVOKE.SWIGPendingException.Pending) throw libosePINVOKE.SWIGPendingException.Retrieve();
   }
 
+  public static void ose_setTypetagAtOffset_impl(ose_bundle B, char typetag, int offset) {
+    libosePINVOKE.ose_setTypetagAtOffset_impl(ose_bundle.getCPtr(B), typetag, offset);
+    if (libosePINVOKE.SWIGPendingException.Pending) throw libosePINVOKE.SWIGPendingException.Retrieve();
+  }
+
   public static void ose_setTypetag_impl(ose_bundle B, char typetag) {
     libosePINVOKE.ose_setTypetag_impl(ose_bundle.getCPtr(B), typetag);
     if (libosePINVOKE.SWIGPendingException.Pending) throw libosePINVOKE.SWIGPendingException.Retrieve();
@@ -905,6 +986,11 @@ public class libose {
 
   public static void ose_setTypetag(ose_bundle B) {
     libosePINVOKE.ose_setTypetag(ose_bundle.getCPtr(B));
+    if (libosePINVOKE.SWIGPendingException.Pending) throw libosePINVOKE.SWIGPendingException.Retrieve();
+  }
+
+  public static void ose_blobToElemAtOffset(ose_bundle B, int offset) {
+    libosePINVOKE.ose_blobToElemAtOffset(ose_bundle.getCPtr(B), offset);
     if (libosePINVOKE.SWIGPendingException.Pending) throw libosePINVOKE.SWIGPendingException.Retrieve();
   }
 
@@ -950,6 +1036,16 @@ public class libose {
 
   public static void ose_appendByte(ose_bundle B) {
     libosePINVOKE.ose_appendByte(ose_bundle.getCPtr(B));
+    if (libosePINVOKE.SWIGPendingException.Pending) throw libosePINVOKE.SWIGPendingException.Retrieve();
+  }
+
+  public static void ose_toDouble(ose_bundle B) {
+    libosePINVOKE.ose_toDouble(ose_bundle.getCPtr(B));
+    if (libosePINVOKE.SWIGPendingException.Pending) throw libosePINVOKE.SWIGPendingException.Retrieve();
+  }
+
+  public static void ose_toTimetag(ose_bundle B) {
+    libosePINVOKE.ose_toTimetag(ose_bundle.getCPtr(B));
     if (libosePINVOKE.SWIGPendingException.Pending) throw libosePINVOKE.SWIGPendingException.Retrieve();
   }
 
@@ -1198,6 +1294,30 @@ public class libose {
     if (libosePINVOKE.SWIGPendingException.Pending) throw libosePINVOKE.SWIGPendingException.Retrieve();
   }
 
+  public static ose_errno ose_getLastBundleElem(ose_bundle B, SWIGTYPE_p_int n, SWIGTYPE_p_int offsetn, SWIGTYPE_p_int sizen) {
+    ose_errno ret = (ose_errno)libosePINVOKE.ose_getLastBundleElem(ose_bundle.getCPtr(B), SWIGTYPE_p_int.getCPtr(n), SWIGTYPE_p_int.getCPtr(offsetn), SWIGTYPE_p_int.getCPtr(sizen));
+    if (libosePINVOKE.SWIGPendingException.Pending) throw libosePINVOKE.SWIGPendingException.Retrieve();
+    return ret;
+  }
+
+  public static ose_errno ose_getLastTwoBundleElems(ose_bundle B, SWIGTYPE_p_int n, SWIGTYPE_p_int offsetnm1, SWIGTYPE_p_int sizenm1, SWIGTYPE_p_int offsetn, SWIGTYPE_p_int sizen) {
+    ose_errno ret = (ose_errno)libosePINVOKE.ose_getLastTwoBundleElems(ose_bundle.getCPtr(B), SWIGTYPE_p_int.getCPtr(n), SWIGTYPE_p_int.getCPtr(offsetnm1), SWIGTYPE_p_int.getCPtr(sizenm1), SWIGTYPE_p_int.getCPtr(offsetn), SWIGTYPE_p_int.getCPtr(sizen));
+    if (libosePINVOKE.SWIGPendingException.Pending) throw libosePINVOKE.SWIGPendingException.Retrieve();
+    return ret;
+  }
+
+  public static ose_errno ose_getLastThreeBundleElems(ose_bundle B, SWIGTYPE_p_int n, SWIGTYPE_p_int offsetnm2, SWIGTYPE_p_int sizenm2, SWIGTYPE_p_int offsetnm1, SWIGTYPE_p_int sizenm1, SWIGTYPE_p_int offsetn, SWIGTYPE_p_int sizen) {
+    ose_errno ret = (ose_errno)libosePINVOKE.ose_getLastThreeBundleElems(ose_bundle.getCPtr(B), SWIGTYPE_p_int.getCPtr(n), SWIGTYPE_p_int.getCPtr(offsetnm2), SWIGTYPE_p_int.getCPtr(sizenm2), SWIGTYPE_p_int.getCPtr(offsetnm1), SWIGTYPE_p_int.getCPtr(sizenm1), SWIGTYPE_p_int.getCPtr(offsetn), SWIGTYPE_p_int.getCPtr(sizen));
+    if (libosePINVOKE.SWIGPendingException.Pending) throw libosePINVOKE.SWIGPendingException.Retrieve();
+    return ret;
+  }
+
+  public static ose_errno ose_getLastFourBundleElems(ose_bundle B, SWIGTYPE_p_int n, SWIGTYPE_p_int offsetnm3, SWIGTYPE_p_int sizenm3, SWIGTYPE_p_int offsetnm2, SWIGTYPE_p_int sizenm2, SWIGTYPE_p_int offsetnm1, SWIGTYPE_p_int sizenm1, SWIGTYPE_p_int offsetn, SWIGTYPE_p_int sizen) {
+    ose_errno ret = (ose_errno)libosePINVOKE.ose_getLastFourBundleElems(ose_bundle.getCPtr(B), SWIGTYPE_p_int.getCPtr(n), SWIGTYPE_p_int.getCPtr(offsetnm3), SWIGTYPE_p_int.getCPtr(sizenm3), SWIGTYPE_p_int.getCPtr(offsetnm2), SWIGTYPE_p_int.getCPtr(sizenm2), SWIGTYPE_p_int.getCPtr(offsetnm1), SWIGTYPE_p_int.getCPtr(sizenm1), SWIGTYPE_p_int.getCPtr(offsetn), SWIGTYPE_p_int.getCPtr(sizen));
+    if (libosePINVOKE.SWIGPendingException.Pending) throw libosePINVOKE.SWIGPendingException.Retrieve();
+    return ret;
+  }
+
   public static int ose_pstrlen(string s) {
     int ret = libosePINVOKE.ose_pstrlen(s);
     return ret;
@@ -1374,6 +1494,18 @@ public class libose {
     return ret;
   }
 
+  public static double ose_readDouble(ose_bundle B, int offset) {
+    double ret = libosePINVOKE.ose_readDouble(ose_bundle.getCPtr(B), offset);
+    if (libosePINVOKE.SWIGPendingException.Pending) throw libosePINVOKE.SWIGPendingException.Retrieve();
+    return ret;
+  }
+
+  public static int ose_writeDouble(ose_bundle B, int offset, double f) {
+    int ret = libosePINVOKE.ose_writeDouble(ose_bundle.getCPtr(B), offset, f);
+    if (libosePINVOKE.SWIGPendingException.Pending) throw libosePINVOKE.SWIGPendingException.Retrieve();
+    return ret;
+  }
+
   public static ose_timetag ose_readTimetag(ose_bundle B, int offset) {
     ose_timetag ret = new ose_timetag(libosePINVOKE.ose_readTimetag(ose_bundle.getCPtr(B), offset), true);
     if (libosePINVOKE.SWIGPendingException.Pending) throw libosePINVOKE.SWIGPendingException.Retrieve();
@@ -1386,10 +1518,21 @@ public class libose {
     return ret;
   }
 
+  public static SWIGTYPE_p_void ose_readAlignedPtr_impl(string b) {
+    global::System.IntPtr cPtr = libosePINVOKE.ose_readAlignedPtr_impl(b);
+    SWIGTYPE_p_void ret = (cPtr == global::System.IntPtr.Zero) ? null : new SWIGTYPE_p_void(cPtr, false);
+    return ret;
+  }
+
   public static SWIGTYPE_p_void ose_readAlignedPtr(ose_bundle B, int offset) {
     global::System.IntPtr cPtr = libosePINVOKE.ose_readAlignedPtr(ose_bundle.getCPtr(B), offset);
     SWIGTYPE_p_void ret = (cPtr == global::System.IntPtr.Zero) ? null : new SWIGTYPE_p_void(cPtr, false);
     if (libosePINVOKE.SWIGPendingException.Pending) throw libosePINVOKE.SWIGPendingException.Retrieve();
+    return ret;
+  }
+
+  public static int ose_writeAlignedPtr_impl(string b, SWIGTYPE_p_void ptr) {
+    int ret = libosePINVOKE.ose_writeAlignedPtr_impl(b, SWIGTYPE_p_void.getCPtr(ptr));
     return ret;
   }
 
@@ -1531,6 +1674,48 @@ public class libose {
     return ret;
   }
 
+  public static int OSEVM_INPUT_SIZE {
+    get {
+      int ret = libosePINVOKE.OSEVM_INPUT_SIZE_get();
+      return ret;
+    } 
+  }
+
+  public static int OSEVM_STACK_SIZE {
+    get {
+      int ret = libosePINVOKE.OSEVM_STACK_SIZE_get();
+      return ret;
+    } 
+  }
+
+  public static int OSEVM_ENV_SIZE {
+    get {
+      int ret = libosePINVOKE.OSEVM_ENV_SIZE_get();
+      return ret;
+    } 
+  }
+
+  public static int OSEVM_CONTROL_SIZE {
+    get {
+      int ret = libosePINVOKE.OSEVM_CONTROL_SIZE_get();
+      return ret;
+    } 
+  }
+
+  public static int OSEVM_DUMP_SIZE {
+    get {
+      int ret = libosePINVOKE.OSEVM_DUMP_SIZE_get();
+      return ret;
+    } 
+  }
+
+  public static int OSEVM_TOTAL_SIZE {
+    get {
+      int ret = libosePINVOKE.OSEVM_TOTAL_SIZE_get();
+      return ret;
+    } 
+  }
+
   public static ose_bundle osevm_init(ose_bundle bundle) {
     ose_bundle ret = new ose_bundle(libosePINVOKE.osevm_init(ose_bundle.getCPtr(bundle)), true);
     if (libosePINVOKE.SWIGPendingException.Pending) throw libosePINVOKE.SWIGPendingException.Retrieve();
@@ -1573,22 +1758,14 @@ public class libose {
     return ret;
   }
 
-  public static int osevm_getPayloadItemLength_hook(ose_bundle bundle, char typetag, int msg_offset, int item_offset) {
-    int ret = libosePINVOKE.osevm_getPayloadItemLength_hook(ose_bundle.getCPtr(bundle), typetag, msg_offset, item_offset);
+  public static void osesdk_lookup(ose_bundle osevm) {
+    libosePINVOKE.osesdk_lookup(ose_bundle.getCPtr(osevm));
     if (libosePINVOKE.SWIGPendingException.Pending) throw libosePINVOKE.SWIGPendingException.Retrieve();
-    return ret;
   }
 
-  public static int osevm_getPayloadItemSize_hook(ose_bundle bundle, char typetag, int msg_offset, int item_offset) {
-    int ret = libosePINVOKE.osevm_getPayloadItemSize_hook(ose_bundle.getCPtr(bundle), typetag, msg_offset, item_offset);
+  public static void osesdk_evalType(ose_bundle osevm) {
+    libosePINVOKE.osesdk_evalType(ose_bundle.getCPtr(osevm));
     if (libosePINVOKE.SWIGPendingException.Pending) throw libosePINVOKE.SWIGPendingException.Retrieve();
-    return ret;
-  }
-
-  public static int osevm_pprintPayloadItem_hook(ose_bundle bundle, char typetag, int msg_offset, int item_offset) {
-    int ret = libosePINVOKE.osevm_pprintPayloadItem_hook(ose_bundle.getCPtr(bundle), typetag, msg_offset, item_offset);
-    if (libosePINVOKE.SWIGPendingException.Pending) throw libosePINVOKE.SWIGPendingException.Retrieve();
-    return ret;
   }
 
   public static void osevm_inputMessages(ose_bundle osevm, int size, string bundle) {
@@ -1772,6 +1949,16 @@ public class libose {
     if (libosePINVOKE.SWIGPendingException.Pending) throw libosePINVOKE.SWIGPendingException.Retrieve();
   }
 
+  public static void osevm_toDouble(ose_bundle bundle) {
+    libosePINVOKE.osevm_toDouble(ose_bundle.getCPtr(bundle));
+    if (libosePINVOKE.SWIGPendingException.Pending) throw libosePINVOKE.SWIGPendingException.Retrieve();
+  }
+
+  public static void osevm_toTimetag(ose_bundle bundle) {
+    libosePINVOKE.osevm_toTimetag(ose_bundle.getCPtr(bundle));
+    if (libosePINVOKE.SWIGPendingException.Pending) throw libosePINVOKE.SWIGPendingException.Retrieve();
+  }
+
   public static SWIGTYPE_p_void getself(ose_bundle osevm) {
     global::System.IntPtr cPtr = libosePINVOKE.getself(ose_bundle.getCPtr(osevm));
     SWIGTYPE_p_void ret = (cPtr == global::System.IntPtr.Zero) ? null : new SWIGTYPE_p_void(cPtr, false);
@@ -1802,11 +1989,6 @@ public class libose {
     } 
   }
 
-  public static readonly int OSE_CONF_VM_INPUT_SIZE = libosePINVOKE.OSE_CONF_VM_INPUT_SIZE_get();
-  public static readonly int OSE_CONF_VM_STACK_SIZE = libosePINVOKE.OSE_CONF_VM_STACK_SIZE_get();
-  public static readonly int OSE_CONF_VM_ENV_SIZE = libosePINVOKE.OSE_CONF_VM_ENV_SIZE_get();
-  public static readonly int OSE_CONF_VM_CONTROL_SIZE = libosePINVOKE.OSE_CONF_VM_CONTROL_SIZE_get();
-  public static readonly int OSE_CONF_VM_DUMP_SIZE = libosePINVOKE.OSE_CONF_VM_DUMP_SIZE_get();
   public static readonly string OSE_BUNDLE_ID_ = libosePINVOKE.OSE_BUNDLE_ID__get();
   public static readonly int OSE_BUNDLE_ID_LEN_ = libosePINVOKE.OSE_BUNDLE_ID_LEN__get();
   public static readonly string OSE_TIMETAG_NULL_ = libosePINVOKE.OSE_TIMETAG_NULL__get();
@@ -1817,11 +1999,14 @@ public class libose {
   public static readonly string OSE_GETPAYLOADITEMLENGTH_ADDR_ = libosePINVOKE.OSE_GETPAYLOADITEMLENGTH_ADDR__get();
   public static readonly string OSE_GETPAYLOADITEMSIZE_ADDR_ = libosePINVOKE.OSE_GETPAYLOADITEMSIZE_ADDR__get();
   public static readonly int OSE_CONTEXT_ALIGNMENT = libosePINVOKE.OSE_CONTEXT_ALIGNMENT_get();
+  public static readonly int OSE_CONTEXT_CACHE_SIZE = libosePINVOKE.OSE_CONTEXT_CACHE_SIZE_get();
   public static readonly int OSE_CONTEXT_BUNDLE_SIZE_OFFSET = libosePINVOKE.OSE_CONTEXT_BUNDLE_SIZE_OFFSET_get();
   public static readonly int OSE_CONTEXT_TOTAL_SIZE_OFFSET = libosePINVOKE.OSE_CONTEXT_TOTAL_SIZE_OFFSET_get();
   public static readonly int OSE_CONTEXT_PARENT_BUNDLE_OFFSET_OFFSET = libosePINVOKE.OSE_CONTEXT_PARENT_BUNDLE_OFFSET_OFFSET_get();
   public static readonly int OSE_CONTEXT_STATUS_OFFSET = libosePINVOKE.OSE_CONTEXT_STATUS_OFFSET_get();
   public static readonly int OSE_CONTEXT_MEMUSAGE_OFFSET = libosePINVOKE.OSE_CONTEXT_MEMUSAGE_OFFSET_get();
+  public static readonly int OSE_CONTEXT_CHANGED_OFFSET = libosePINVOKE.OSE_CONTEXT_CHANGED_OFFSET_get();
+  public static readonly int OSE_CONTEXT_CACHE_OFFSET = libosePINVOKE.OSE_CONTEXT_CACHE_OFFSET_get();
   public static readonly int OSE_CONTEXT_BUNDLE_OFFSET = libosePINVOKE.OSE_CONTEXT_BUNDLE_OFFSET_get();
   public static readonly int OSE_CONTEXT_STATUS_MESSAGE_SIZE = libosePINVOKE.OSE_CONTEXT_STATUS_MESSAGE_SIZE_get();
   public static readonly int OSE_MATCH_BACKTRACK_LIMIT = libosePINVOKE.OSE_MATCH_BACKTRACK_LIMIT_get();
