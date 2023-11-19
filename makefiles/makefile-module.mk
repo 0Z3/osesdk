@@ -4,7 +4,9 @@ CFILES ?= ose_$(BASENAME).c
 
 INCLUDES += -I. -I$(LIBOSEDIR)/..
 
-o.se.$(BASENAME).so: $(CFILES:.c=.o) $(CXXFILES:.$(CXXEXT)=.o) $(OTHERDEPS)
+TARGETNAME ?= o.se.$(BASENAME).so
+
+$(TARGETNAME): $(OTHERDEPS) $(CFILES:.c=.o) $(CXXFILES:.$(CXXEXT)=.o) 
 	$(CXX) $(LDFLAGS) -shared -o $@ $^ $(OTHERLINKOBJS)
 
 $(CXXFILES:.$(CXXEXT)=.o): %.o: %.$(CXXEXT) $(OTHERCXXFILEDEPS)
@@ -14,5 +16,5 @@ $(CFILES:.c=.o): %.o: %.c $(OTHERCFILEDEPS)
 	$(CC) -c $(CFLAGS) $(INCLUDES) $(DEFINES) $< -o $@
 
 .PHONY: clean
-clean:
+clean: $(OTHERCLEANTARGETS)
 	rm -rf *.o *.so *.dSYM $(OTHERCLEAN)
