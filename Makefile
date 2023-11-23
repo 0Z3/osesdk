@@ -26,9 +26,9 @@ $(LIBOSEDIR)/libose.a:
 ############################################################
 
 ifeq ($(OSNAME),Darwin)
-STATIC_TARGET_CMD = libtool -static -o $(STATIC_TARGET) $(OFILES)
+STATIC_TARGET_CMD = libtool -static -o $(STATIC_TARGET) $(OFILES) $(LIBOSEDIR)/libose.a
 else
-STATIC_TARGET_CMD = ar rcs $(STATIC_TARGET) $(OFILES)
+STATIC_TARGET_CMD = ar rcs $(STATIC_TARGET) $(OFILES) $(LIBOSEDIR)/*.o
 endif
 
 CFILES += \
@@ -48,7 +48,8 @@ INCLUDES += -I$(SOURCEDIR) -I$(INCLUDESDIR) -I$(LIBOSEDIR) -I$(SOURCEDIR)/thirdp
 	$(CC) $(CFLAGS) -c $(INCLUDES) -o $@ $<
 
 $(STATIC_TARGET): $(LIBOSEDIR)/libose.a $(OFILES)
-	libtool -static -o $(STATIC_TARGET) $(OFILES) $(LIBOSEDIR)/libose.a
+	$(STATIC_TARGET_CMD)
+#	libtool -static -o $(STATIC_TARGET) $(OFILES) $(LIBOSEDIR)/libose.a
 
 ############################################################
 # Csharp
@@ -57,6 +58,7 @@ $(STATIC_TARGET): $(LIBOSEDIR)/libose.a $(OFILES)
 clean:
 	rm -rf $(SOURCEDIR)/libosesdk.a
 	rm -rf $(SOURCEDIR)/*.o
+	cd $(SOURCEDIR)/thirdparty/rax && $(MAKE) clean
 
 libose-clean:
 	cd $(LIBOSEDIR) && $(MAKE) clean
