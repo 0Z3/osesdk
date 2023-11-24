@@ -7,7 +7,7 @@ INCLUDES += -I. -I$(LIBOSEDIR)/..
 TARGETNAME ?= o.se.$(BASENAME).so
 
 $(TARGETNAME): $(OTHERDEPS) $(CFILES:.c=.o) $(CXXFILES:.$(CXXEXT)=.o) 
-	$(CXX) $(LDFLAGS) -shared -o $@ $^ $(OTHERLINKOBJS)
+	$(CXX) $(LDFLAGS) -o $@ $^ $(OTHERLINKOBJS)
 
 $(CXXFILES:.$(CXXEXT)=.o): %.o: %.$(CXXEXT) $(OTHERCXXFILEDEPS)
 	$(CXX) -c $(CXXFLAGS) $(INCLUDES) $(DEFINES) $< -o $@
