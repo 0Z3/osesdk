@@ -8,6 +8,8 @@
 #include <string.h> // for strlen
 #include <stdlib.h> // for malloc, etc. DELETE ME
 
+#define OSE_SCALAR_ALIGNMENT 16
+
 /* #define PROFILE */
 #ifdef PROFILE
 #include <mach/mach_time.h>
@@ -58,6 +60,11 @@ void osesdk_rax_init(ose_bundle bundle,
                      int32_t raxmemsize, char *raxmem)
 {
     TIMER_INIT;
+    while((uintptr_t)raxmem % OSE_SCALAR_ALIGNMENT)
+    {
+        ++raxmem;
+        --raxmemsize;
+    }
     struct osesdk_rax_obj *o = (struct osesdk_rax_obj *)raxmem;
     o->mem = raxmem + sizeof(struct osesdk_rax_obj);
     o->memsize = raxmemsize - sizeof(struct osesdk_rax_obj);
@@ -153,22 +160,23 @@ void osesdk_rax_buildTree(ose_bundle bundle,
 void *osesdk_rax_malloc(size_t size, void *context)
 {
     struct osesdk_rax_obj *o = (struct osesdk_rax_obj *)context;
+    while(size % OSE_SCALAR_ALIGNMENT)
+    {
+        ++size;
+    }
     char *ptr = o->mem + o->memloc;
     *((int32_t *)ptr) = (int32_t)size;
-    o->memloc += size + 4;
-    return ptr + 4;
-    /* return malloc(size); */
+    o->memloc += size + OSE_SCALAR_ALIGNMENT;
+    return ptr + OSE_SCALAR_ALIGNMENT;
 }
 
 void *osesdk_rax_realloc(void *ptr, size_t size, void *context)
 {
     char *newptr = osesdk_rax_malloc(size, context);
-    memcpy(newptr, ptr, *((int32_t *)(ptr - 4)));
+    memcpy(newptr, ptr, *((int32_t *)(ptr - OSE_SCALAR_ALIGNMENT)));
     return newptr;
-    /* return realloc(ptr, size); */
 }
 
 void osesdk_rax_free(void *ptr, void *context)
 {
-    /* free(ptr); */
 }
