@@ -125,7 +125,7 @@ void osesdk_evalType(ose_bundle osevm)
     if(ose_getBundleElemType(vm_s, o) == OSETT_BUNDLE)
     {
         const char * const buf =
-            OSEVM_EVALTYPE_ADDR_TYPESTR[OSETT_BUNDLE];
+            OSEVM_EVALTYPE_ADDR_TYPESTR[(unsigned)OSETT_BUNDLE];
         int32_t lasto = ose_readSize(vm_s);
         ose_pushString(vm_s, buf);
         OSEVM_LOOKUP(osevm);
@@ -145,7 +145,7 @@ void osesdk_evalType(ose_bundle osevm)
         char tt;
         tt = ose_peekMessageArgTypeAtOffset(vm_s, o);
         const char * const buf =
-            OSEVM_EVALTYPE_ADDR_TYPESTR[tt];
+            OSEVM_EVALTYPE_ADDR_TYPESTR[(unsigned)tt];
         ose_pushString(vm_s, buf);
         OSEVM_LOOKUP(osevm);
         if(ose_peekMessageArgTypeAtOffset(vm_s, lasto) == OSETT_BLOB)

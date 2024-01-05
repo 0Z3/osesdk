@@ -129,7 +129,6 @@ void osesdk_rax_buildTree(ose_bundle bundle,
         char *b = ose_getBundlePtr(bundle);
         int32_t s = ose_readSize(bundle);
         intptr_t oo = OSE_BUNDLE_HEADER_LEN;
-        int32_t n = 0;
     
         if(o->raxobj)
         {
@@ -148,7 +147,6 @@ void osesdk_rax_buildTree(ose_bundle bundle,
                       &old,
                       (void *)o);
             oo += ose_readInt32(bundle, oo) + 4;
-            ++n;
         }
         /* *userdata = (void *)raxobj; */
         TIMER_END(t2);
