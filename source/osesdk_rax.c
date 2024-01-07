@@ -70,10 +70,10 @@ void osesdk_rax_init(ose_bundle bundle,
     o->memsize = raxmemsize - sizeof(struct osesdk_rax_obj);
     o->memloc = 0;
     o->raxobj = NULL;
-    ose_context_set_cachefns(bundle,
-                             /* osesdk_rax_onchange, */
-                             osesdk_rax_getFirstOffsetForMatch,
-                             (void *)o);
+    ose_context_cache_setGetFirstOffsetForMatchFn(bundle,
+                                                  osesdk_rax_getFirstOffsetForMatch);
+    ose_context_cache_setUserdata(bundle,
+                                  (void *)o);
 }
 
 int32_t osesdk_rax_getFirstOffsetForMatch(ose_bundle bundle,
